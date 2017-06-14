@@ -20,7 +20,7 @@
 
 	pBuffer = new(pBuffer) int(1024);
 
-# 完整示例
+# 示例
 ```
 #include <iostream>
 
