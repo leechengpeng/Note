@@ -18,22 +18,3 @@ void BubbleSort(std::array<T, LEN>& voArray)
 	}
 }
 ```
-
-`注：通用代码`
-```
-template <typename T, size_t LEN>
-std::ostream& operator << (std::ostream& vOut, const std::array<T, LEN>& vArray)
-{
-	for (auto Element : vArray) { vOut << Element << " "; }
-
-	return vOut;
-}
-
-template <typename T>
-inline void swap(T& voX, T& voY)
-{
-	T Temp = voX;
-	voX = voY;
-	voY = Temp;
-}
-```
