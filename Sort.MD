@@ -21,8 +21,6 @@ inline void swap(T& voX, T& voY)
 * 比较相邻元素，如果前者比后者大，则交换两元素
 * 重复上诉步骤，直至未排序序列末尾
 
-![冒泡排序](http://images.cnitblog.com/i/175043/201407/111932240828036.png)
-
 ```
 template <typename T, size_t LEN>
 void BubbleSort(std::array<T, LEN>& voArray)
