@@ -3,7 +3,7 @@
 ## C++
 
  - [C++的三种new](CPP_New.MD)
- - [虚函数表](VirtualFunctionTable.MD)
+ - [虚函数表](CPP_VirtualFunctionTable.MD)
 
 ## Algorithm
 
