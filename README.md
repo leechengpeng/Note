@@ -2,4 +2,4 @@
 
 ## C++
 
- - [C++ new的三种方法](New.MD)
+ - [C++三种new](CPP_New.MD)
