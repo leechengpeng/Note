@@ -1,4 +1,4 @@
-# C++ new的三种方法
+# C++三种new
 
 ## 1. new operator
 
