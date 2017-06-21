@@ -58,3 +58,6 @@ void insert_sort(std::array<T, LEN>& voArray)
 	}
 }
 ```
+
+参考文献：
+* [比较排序算法 —— by 匠心十年](http://www.cnblogs.com/gaochundong/p/comparison_sorting_algorithms.html)
