@@ -1,7 +1,10 @@
 ## 1. 交换排序
-### 冒泡排序
+### 1.1. 冒泡排序
+#### 算法描述
 * 比较相邻元素，如果前者比后者大，则交换两元素
 * 重复上诉步骤，直至未排序序列末尾
+#### 流程
+
 ```
 template <typename T, size_t LEN>
 void bubble_sort(std::array<T, LEN>& voArray)
@@ -18,3 +21,7 @@ void bubble_sort(std::array<T, LEN>& voArray)
 	}
 }
 ```
+
+
+## 2. 插入排序
+### 插入排序
