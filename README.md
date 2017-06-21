@@ -9,7 +9,7 @@
 
 ## Algorithm
 
- - [排序算法](Sort.MD)
+ - [排序算法](Sort.md)
 
 ## STL
 
