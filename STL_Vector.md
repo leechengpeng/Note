@@ -1,6 +1,6 @@
 # vector
 
-### iterator
+### 1. iterator
 vector<T>的迭代器实际上是其类型T的指针，定义如下：
 ```
 typedef T* iterator;
