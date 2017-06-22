@@ -21,4 +21,4 @@ node->pre  = node;
 * list的插入和删除操作不会造成list迭代器失效
 
 ### 3. list不能使用STL算法的sort函数
-list不能使用STL算法的sort函数，只能使用list自带的sort函数。疑问STL算法sort函数采用的随机访问迭代器（可以随机访问任意位置元素），而list迭代器只提供了++和--操作，因此不能使用通用的排序算法。
+list不能使用STL算法的sort函数，只能使用list自带的sort函数。因为STL算法sort函数采用的随机访问迭代器（可以随机访问任意位置元素），而list迭代器只提供了++和--操作。
