@@ -17,3 +17,7 @@
  - [list](STL_list.md)
 
 #### TODO：各类容器使用场景表
+
+## 附录
+* [c++研发面试](http://blog.csdn.net/Watson2016/article/details/69944537?locationNum=14&fps=1)
+* [程序员如何快速准备面试中的算法](http://www.cnblogs.com/scy251147/p/3635010.html)
