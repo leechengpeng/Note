@@ -277,5 +277,5 @@ int main()
 
 根据不同的平衡条件实现方式，大概有如下几种平衡二叉搜索树：
 * [AVL tree](STL_BST_AVL_TREE.md)
-* [RB  tree](STL_BST_RB_TREE.md)
-* AA  tree
+* [RB tree](STL_BST_RB_TREE.md)
+* AA tree
