@@ -1,5 +1,6 @@
-# Index
-[二叉搜索树](#二叉搜索树)
+* [二叉搜索树](#二叉搜索树)
+* [平衡二叉搜索树](#平衡二叉搜索树)
+* [AVL Tree](#AVL Tree)
 
 # 二叉搜索树
 ### 特点
@@ -272,10 +273,11 @@ int main()
 }
 ```
 
-# BBST
+# 平衡二叉搜索树
 由于输入数据不够随机或者插入删除操作，常常会导致BST不够平衡（平衡：没有任意结点的深度相对其他结点过深）。不平衡的BST会对搜索效率造成极大的影响。根据不同的实现复杂度，大概有如下BBST：
 * AVL tree
 * RB  tree
 * AA  tree
 
-# AVL Tree（Adelson-Velskii-Landis Tree）
+# AVL Tree
+AVL Tree（Adelson-Velskii-Landis Tree）
