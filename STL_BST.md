@@ -1,6 +1,6 @@
-* [二叉搜索树](#二叉搜索树)
-* [平衡二叉搜索树](#平衡二叉搜索树)
-* [AVL Tree](#AVL Tree)
+* [二叉搜索树](#二叉搜索树binary-search-tree-bst)
+* [平衡二叉搜索树](#平衡二叉搜索树balance-bst)
+* [AVL Tree](#avl-treeadelson-velskii-landis-tree)
 
 # 二叉搜索树（Binary Search Tree, BST）
 ### 特点
