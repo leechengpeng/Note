@@ -1,6 +1,5 @@
 * [二叉搜索树](#二叉搜索树binary-search-tree-bst)
 * [平衡二叉搜索树](#平衡二叉搜索树balance-bst)
-* [AVL Tree](#avl-treeadelson-velskii-landis-tree)
 
 ## 二叉搜索树（Binary Search Tree, BST）
 ### 特点
@@ -274,10 +273,9 @@ int main()
 ```
 
 ## 平衡二叉搜索树（Balance BST）
-由于输入数据不够随机或者插入删除操作，常常会导致BST不够平衡（平衡：没有任意结点的深度相对其他结点过深）。不平衡的BST会对搜索效率造成极大的影响。根据不同的实现复杂度，大概有如下BBST：
-* AVL tree
-* RB  tree
-* AA  tree
+由于输入数据不够随机或者插入删除操作，常常会导致BST不够平衡（平衡：没有任意结点的深度相对其他结点过深），而不平衡的BST会对搜索效率造成极大的影响。
 
-## AVL Tree（Adelson-Velskii-Landis Tree）
-AVL Tree是一个“加了额外平衡条件”的二叉搜索树，该平衡条件确保整棵树的深度**尽量**为log(N)，其左右子树的高度相差最多为**1**。
+根据不同的平衡条件实现方式，大概有如下几种平衡二叉搜索树：
+* [AVL tree](STL_BST_AVL_TREE.md)
+* [RB tree](STL_BST_RB_TREE.md)
+* AA tree
