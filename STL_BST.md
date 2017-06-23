@@ -1,5 +1,5 @@
 # Index
-[二叉搜索树](BBST)
+[二叉搜索树](#user-content-BBST)
 
 # 二叉搜索树(Binary Search Tree, BST)
 ### 特点
