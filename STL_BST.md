@@ -2,7 +2,7 @@
 * [平衡二叉搜索树](#平衡二叉搜索树balance-bst)
 * [AVL Tree](#avl-treeadelson-velskii-landis-tree)
 
-# 二叉搜索树（Binary Search Tree, BST）
+## 二叉搜索树（Binary Search Tree, BST）
 ### 特点
 二叉搜索树，也称有序二叉树，是指一棵树具有以下特点：
 * 若任意结点N的左子树不为空，则左子树上所有的结点的值均小于N的值
@@ -273,11 +273,11 @@ int main()
 }
 ```
 
-# 平衡二叉搜索树（Balance BST）
+## 平衡二叉搜索树（Balance BST）
 由于输入数据不够随机或者插入删除操作，常常会导致BST不够平衡（平衡：没有任意结点的深度相对其他结点过深）。不平衡的BST会对搜索效率造成极大的影响。根据不同的实现复杂度，大概有如下BBST：
 * AVL tree
 * RB  tree
 * AA  tree
 
-# AVL Tree（Adelson-Velskii-Landis Tree）
+## AVL Tree（Adelson-Velskii-Landis Tree）
 
