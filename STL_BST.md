@@ -1,3 +1,6 @@
+# Index
+[二叉搜索树](BBST)
+
 # 二叉搜索树(Binary Search Tree, BST)
 ### 特点
 二叉搜索树，也称为有序二叉树，是指一棵树具有以下特点：
@@ -269,7 +272,7 @@ int main()
 }
 ```
 
-# 平衡二叉搜索树（Balance Binary Search Tree，BBST）
+# BBST
 由于输入数据不够随机或者插入删除操作，常常会导致BST不够平衡（平衡：没有任意结点的深度相对其他结点过深）。不平衡的BST会对搜索效率造成极大的影响。根据不同的实现复杂度，大概有如下BBST：
 * AVL tree
 * RB  tree
