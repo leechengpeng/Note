@@ -280,4 +280,4 @@ int main()
 * AA  tree
 
 ## AVL Tree（Adelson-Velskii-Landis Tree）
-AVL Tree是一个“加了额外平衡条件”的二叉搜索树，该平衡条件确保整棵树的深度**尽量**为log(N)，其左右子树的高度相差最多**1**。
+AVL Tree是一个“加了额外平衡条件”的二叉搜索树，该平衡条件确保整棵树的深度**尽量**为log(N)，其左右子树的高度相差最多为**1**。
