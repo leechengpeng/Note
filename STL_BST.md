@@ -1,5 +1,5 @@
 # Index
-[二叉搜索树](#bbst)
+[二叉搜索树](#二叉搜索树(Binary Search Tree, BST))
 
 # 二叉搜索树(Binary Search Tree, BST)
 ### 特点
