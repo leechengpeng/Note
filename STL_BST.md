@@ -21,18 +21,14 @@ namespace LLL
 	template <typename T>
 	inline void safe_delete(T*& vPtr)
 	{
-		if (vPtr)
-		{
-			delete vPtr;
-			vPtr = nullptr;
-		}
+		delete vPtr;
+		vPtr = nullptr;
 	}
 
 	template <typename T>
 	struct SNode
 	{
 		T m_Obj;
-
 		SNode<T>* m_pLeft;
 		SNode<T>* m_pRight;
 
@@ -52,7 +48,6 @@ namespace LLL
 		~CBST() { safe_delete(m_pRoot); }
 
 		void insert(const T vObj);
-		void remove(const T vObj);
 		bool search(const T vObj) const;
 
 		T maxmum()  const;
@@ -112,62 +107,10 @@ namespace LLL
 	// ***************************************************
 	// FUNCTION:
 	template <typename T>
-	void CBST<T>::remove(const T vObj)
-	{
-		auto pNode  = m_pRoot;
-		auto pPNode = pNode;
-
-		while (pNode)
-		{
-			pPNode = pNode;
-
-			if (pNode->m_Obj > vObj)
-			{
-				pNode = pNode->m_pLeft;
-			}
-			else if (pNode->m_Obj < vObj)
-			{
-				pNode = pNode->m_pRight;
-			}
-			else
-			{
-				// 1. 待删除结点有两个子结点
-				if (pNode->m_pLeft != nullptr && pNode->m_pRight != nullptr)
-				{
-					// TODO
-				}
-				// 2. 待删除结点没有子结点/子树
-				else if (pNode->m_pLeft == nullptr && pNode->m_pRight == nullptr)
-				{
-					if (pPNode->m_pLeft == pNode)
-					{
-						pPNode->m_pLeft = nullptr;
-					}
-					else if (pPNode->m_pRight == pNode)
-					{
-						pPNode->m_pLeft = nullptr;
-					}
-				}
-				// 3. 待删除结点只有一个子结点 
-				else
-				{
-					// TODO
-				}
-
-				break;
-			}
-		}
-	}
-
-	// ***************************************************
-	// FUNCTION:
-	template <typename T>
 	bool CBST<T>::search(const T vObj) const
 	{
 		auto IsExist = false;
-		auto pNode   = m_pRoot;
-
-		while (pNode)
+		for (auto pNode = m_pRoot; pNode != nullptr;)
 		{
 			if (pNode->m_Obj > vObj)
 			{
