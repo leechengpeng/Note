@@ -15,7 +15,7 @@ BST的插入比较简单，按照BST的特点即可快速插入新的结点。�
 2. 待删除结点M有左右子结点/子树，此时将结点M**右子树的最小值**（该最小值大于M左子树的任意值，同时也小于其右子树的任意值）替换结点M即可
 
 ### 实现
-```
+```C++
 namespace LLL
 {
 	template <typename T>
@@ -172,7 +172,7 @@ namespace LLL
 }
 ```
 ### 测试
-```
+```C++
 //FUNCTION: detect the memory leak in DEBUG mode
 void installMemoryLeakDetector()
 {
