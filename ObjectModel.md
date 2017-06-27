@@ -75,6 +75,7 @@ void fooBar(X& voResult)
 	// 构造voResult	
 	voResult.X::X();
 	// 扩展x.foo()，不使用virtual机制
+	// C++调用类成员函数的时候，会向成员函数传入指向对象的指针
 	foo(&voResult);		
 	
 	// 扩展new pX
@@ -97,3 +98,5 @@ void fooBar(X& voResult)
 	return;
 }
 ```
+
+![此处需要插入图片](http://xx.com)
