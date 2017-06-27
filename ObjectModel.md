@@ -72,8 +72,10 @@ X fooBar()
 void fooBar(X& voResult)
 {
 	// 用voResult替代局部对象x
-	voResult.X::X();	// 构造voResult	
-	foo(&voResult);		// 扩展x.foo()，不使用virtual机制
+	// 构造voResult	
+	voResult.X::X();
+	// 扩展x.foo()，不使用virtual机制
+	foo(&voResult);		
 	
 	// 扩展new pX
 	pX = _new(sizeof(X));
@@ -82,10 +84,12 @@ void fooBar(X& voResult)
 	// 使用virtual机制扩展pX->foo()
 	(*pX->vtbl[2])(pX);
 	
-	// 扩展delete pX。
-	if (pX)	 // 注意此处对指针的判断语句，C++在设计的时候都已经添加对指针是否为空的判断，因此在使用delete的时候不需要判断指针是否为空
+	// 扩展delete pX
+	// 注意此处对指针的判断语句，C++在设计的时候都已经添加对指针是否为空的判断，因此在使用delete的时候不需要判断指针是否为空
+	if (pX)
 	{
-		(*pX->vtbl[1])(pX);	// 调用析构函数（析构函数是虚函数，因此也需要virtual机制）
+		// 调用析构函数（析构函数是虚函数，因此也需要virtual机制）
+		(*pX->vtbl[1])(pX);
 		_delete(pX);
 	}
 	
