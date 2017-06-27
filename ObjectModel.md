@@ -9,13 +9,13 @@ class CPoint
 {
 public:
 	CPoint(int vX = 0);
-	virtual ~CPoint();  // 虚函数
+	virtual ~CPoint();  		// 虚函数
 
-	float x() const;  // 成员函数（非静态成员函数）
+	float x() const;  		// 成员函数（非静态成员函数）
 	static unsigned getNumsPoint(); // 静态成员函数
 	
 private:
-	float m_X;  // 成员变量（非静态成员变量）
-	static unsigned m_NumsPoint;  // 静态成员变量
+	float m_X;  			// 成员变量（非静态成员变量）
+	static unsigned m_NumsPoint;  	// 静态成员变量
 };
 ```
