@@ -21,7 +21,7 @@
 	pBuffer = new(pBuffer) int(1024);
 
 # 示例
-```
+```C++
 #include <iostream>
 
 class CClass
