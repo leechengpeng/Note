@@ -1,5 +1,3 @@
-# Index
-
 ## C++
 
  - [C++的三种new](CPP/New.md)
