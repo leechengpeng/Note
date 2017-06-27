@@ -2,10 +2,9 @@
 
 ## C++
 
- - [C++的三种new](CPP/CPP_New.MD)
- - [使用对象管理资源](CPP/CPP_SmartPointer.MD)
- - [内存池(TODO)](CPP/CPP_MemoryPool.MD)
- - [虚函数表(TODO)](CPP/CPP_VirtualFunctionTable.MD)
+ - [C++的三种new](CPP/New.md)
+ - [使用对象管理资源](CPP/SmartPointer.md)
+ - [内存池(TODO)](CPP/MemoryPool.md)
 
 ## Algorithm
 
@@ -13,11 +12,11 @@
 
 ## STL
 #### 序列式容器
- - [vector](STL/STL_vector.md)
- - [list](STL/STL_list.md)
- - [BST](STL/STL_BST.md)
- - [AVL Tree(TODO)](STL/STL_BST_AVL_TREE.md)
- - [RB Tree(TODO)](STL/STL_BST_RB_TREE.md)
+ - [vector](STL/vector.md)
+ - [list](STL/list.md)
+ - [BST](STL/BST.md)
+ - [AVL Tree(TODO)](STL/BST_AVL_TREE.md)
+ - [RB Tree(TODO)](STL/BST_RB_TREE.md)
 
 #### TODO：各类容器使用场景表
 
