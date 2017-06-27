@@ -1,4 +1,4 @@
-# 对象模型（Object Model）
+# C++对象模型（C++ Object Model）
 ## 1. 对象模型的设计
 C++中有以下几种成员（Member）类型：
 > * 成员变量类型：静态成员变量（Static）和非静态成员变量（Nonstatic）
