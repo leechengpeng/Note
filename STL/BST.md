@@ -219,6 +219,6 @@ int main()
 由于输入数据不够随机或者插入删除操作，常常会导致BST不够平衡（平衡：没有任意结点的深度相对其他结点过深），而不平衡的BST会对搜索效率造成极大的影响。
 
 根据不同的平衡条件实现方式，大概有如下几种平衡二叉搜索树：
-* [AVL tree](STL_BST_AVL_TREE.md)
-* [RB tree](STL_BST_RB_TREE.md)
+* [AVL tree](BST_AVL_TREE.md)
+* [RB tree](BST_RB_TREE.md)
 * AA tree
