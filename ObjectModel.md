@@ -75,7 +75,7 @@ void fooBar(X& voResult)
 	// 构造voResult	
 	voResult.X::X();
 	// 扩展x.foo()，不使用virtual机制
-	// C++调用类成员函数的时候，会向成员函数传入指向对象的指针
+	// C++调用类成员函数的时候，会向成员函数传入指向类对象的指针pObj，方便成员函数对类对象变量的访问（因为不同类对象拥有不同的类成员变量值）
 	foo(&voResult);		
 	
 	// 扩展new pX
