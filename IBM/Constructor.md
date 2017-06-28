@@ -28,9 +28,9 @@ int main()
 	return 0;
 }
 ```
-> VS2015: 
-
-> Person::m_Shy::m_Degree = 1, Person::m_Age = 3435973836
+```
+VS2015: Person::m_Shy::m_Degree = 1, Person::m_Age = 3435973836
+```
 
 类**Person**没有提供默认构造函数，在执行`Person Tom;`代码段时，编译器将合成一个默认构造函数，类似于：
 ```C++
@@ -96,11 +96,9 @@ int main()
 	return 0;
 }
 ```
-> VS2015: 
-
-> Person::m_Shy::m_Degree = 1, Person::m_Stupid::m_Degree = 2
-
-> Person::m_Nervous::m_Degree = 3, Person::m_Age = 20
+```
+VS2015: Person::m_Shy::m_Degree = 1, Person::m_Stupid::m_Degree = 2, Person::m_Nervous::m_Degree = 3, Person::m_Age = 2
+```
 
 类**Person**提供了默认构造函数，但该默认构造函数只显示的初始化了`m_Stupid`和`m_Age`。在执行`Person Tom;`代码段时，编译器行为类似于：
 ```C++
