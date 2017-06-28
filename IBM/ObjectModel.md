@@ -25,7 +25,7 @@ private:
 ### 1.1. 简单对象模型
 简单对象模型设计十分简单，其目的是为了尽量降低C++编译器的设计复杂度。在简单对象模型中，一个Object是一系列Slots，每个Slot指向一个类成员。按照类成员声明顺序，slot依次指向一个类成员。这个对象模型类似于一个指向类成员的指针数组，每个指针指向一个类成员。
 
-![简单对象模型](../Resources/Images/简单对象模型.png)
+![简单对象模型](https://github.com/leechengpeng/Note/blob/master/Resources/Images/%E7%AE%80%E5%8D%95%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B.png)
 
 ### 1.2. 表格驱动对象模型
 基于表格驱动对象模型是把类成员根据其类型的不同划分为两个表：
