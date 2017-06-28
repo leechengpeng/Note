@@ -23,12 +23,10 @@
 ## 附录
 * [c++研发面试](http://blog.csdn.net/Watson2016/article/details/69944537?locationNum=14&fps=1)
 * [程序员如何快速准备面试中的算法](http://www.cnblogs.com/scy251147/p/3635010.html)
-* 《STL源码剖析》
-* 《Inside the C++ Object Model》
 
-### Special语法
-- [ ] 支持以 PDF 格式导出文稿
-- [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
+### 计划
+
+- [ ] 《STL源码剖析》
+- [ ] 《Inside the C++ Object Model》
+- [ ] 《编程之法：面试与算法心得》
 - [x] 新增 Todo 列表功能
-- [x] 修复 LaTex 公式渲染问题
-- [x] 新增 LaTex 公式编号功能
