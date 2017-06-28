@@ -1,7 +1,7 @@
 # 构造函数语义 （The Semantics of Constructors）
 
 ## 1. 默认构造函数（Default Constructor）的构造操作
-### 例1：
+### 例1：用户未定义默认构造函数
 ```C++
 class Shy
 {
@@ -39,9 +39,59 @@ inline Person::Person()
 	Shy.Shy::Shy();
 }
 ```
-从编译器的行为可知：
-* 如果类未显示地（explicit）定义默认构造函数（如类**Person**），编译器将生成一个合成默认构造函数
-* 合成默认构造函数只会附加初始化用户定义类型：`Shy`，不会附加初始化内置类型：`int`
+从编译器的行为可以得到如下结论：
+* **如果类未显示地（explicit）定义默认构造函数（如类**Person**），编译器将生成一个合成默认构造函数**
+* **合成默认构造函数只会附加初始化用户定义类型：`Shy`，不会附加初始化内置类型：`int`（定义类的默认构造函数时，最好显示初始化内置类型）**
 
 ### 例2：
+```C++
+class Shy
+{
+public:
+	Shy() : m_Degree(1) {}
+
+private:
+	int m_Degree;
+};
+
+class Stupid
+{ 
+public: 
+	Stupid() : m_Degree(2) {}
+
+private:
+	int m_Degree;
+};
+
+class Nervous
+{
+public:
+	Nervous() : m_Degree(3) {}
+
+private:
+	int m_Degree;
+};
+ 
+class Person
+{
+public:
+	Person() : m_Stupid(), m_Age(20)
+	{
+
+	}
+
+private:
+	Shy		 m_Shy;
+	Stupid   m_Stupid;
+	Nervous  m_Nervous;
+	unsigned m_Age;
+};
+
+int main()
+{
+	Person Tom;
+
+	return 0;
+}
+```
 
