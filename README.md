@@ -26,7 +26,7 @@
 
 ### 计划
 
+- [x] 《Essential C++》
 - [ ] 《STL源码剖析》
 - [ ] 《Inside the C++ Object Model》
 - [ ] 《编程之法：面试与算法心得》
-- [x] 新增 Todo 列表功能
