@@ -34,7 +34,7 @@ private:
 
 **类对象（Class Object）**则直接保存指向这两个表的指针。
 
-![此处需要插入图片](http://xx.com)
+![表格驱动模型](https://github.com/leechengpeng/Note/blob/master/Resources/Images/%E8%A1%A8%E6%A0%BC%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B.png)
 
 ### 1.3. C++对象模型
 C++对象模型是由**简单对象模型**派生而来，并且对**内存空间**和**存取时间**做了相关优化。C++对象模型设计如下：
