@@ -25,8 +25,10 @@
 * [程序员如何快速准备面试中的算法](http://www.cnblogs.com/scy251147/p/3635010.html)
 
 ### 计划
-
 - [x] 《Essential C++》
 - [ ] 《STL源码剖析》
 - [ ] 《Inside the C++ Object Model》
 - [ ] 《编程之法：面试与算法心得》
+
+- [ ] Leetcode
+- [ ] 图形学
