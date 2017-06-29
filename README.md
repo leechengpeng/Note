@@ -3,6 +3,7 @@
  - [C++的三种new](CPP/New.md)
  - [使用对象管理资源](CPP/SmartPointer.md)
  - [内存池(TODO)](CPP/MemoryPool.md)
+ - 线程池
 
 ## Algorithm
 
@@ -20,6 +21,10 @@
 #### 
  - [C++ Object Model](IBM/ObjectModel.md)
 
+## 其它
+#### 
+ - 信号量
+ 
 ## 附录
 * [c++研发面试](http://blog.csdn.net/Watson2016/article/details/69944537?locationNum=14&fps=1)
 * [程序员如何快速准备面试中的算法](http://www.cnblogs.com/scy251147/p/3635010.html)
