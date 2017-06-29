@@ -12,6 +12,8 @@
 #### 序列式容器
  - [vector](STL/vector.md)
  - [list](STL/list.md)
+ - deque
+ - stack
  - [BST](STL/BST.md)
  - [AVL Tree(TODO)](STL/BST_AVL_TREE.md)
  - [RB Tree(TODO)](STL/BST_RB_TREE.md)
