@@ -98,5 +98,3 @@ void fooBar(X& voResult)
 	return;
 }
 ```
-
-![此处需要插入图片](http://xx.com)
