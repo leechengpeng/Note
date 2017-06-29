@@ -118,8 +118,9 @@ inline Person::Person()
 3. 编译器会自动在默认构造函数中附加未显示定义的成员变量初始化代码，以保证所有成员变量都得到正确的初始化
 
 ## 2. 初始化列表（Initializatoin List）
-常用初始化成员变量方法：
+* 普通初始化成员变量方法：
 ```C++
+// C++：
 class CWord
 {
 public:
@@ -133,9 +134,8 @@ private:
 	std::string  m_Word;
 	unsigned int m_Count;
 };
-```
-这段代码没有明显的问题，只是在效率上比初始化列表的方法低。编译器内部扩张的结果如下：
-```C++
+
+// 编译器扩张代码：
 CWord::Cword()
 {
 	// m_Word不会被直接初始化，而是被扩张成4个步骤：
@@ -147,8 +147,9 @@ CWord::Cword()
 	m_Count = 0；
 }
 ```
-使用初始化列表：
+* 初始化列表：
 ```C++
+// C++:
 class CWord
 {
 public:
@@ -161,9 +162,8 @@ private:
 	std::string  m_Word;
 	unsigned int m_Count;
 };
-```
-编译器内部的结果如下：
-```C++
+
+// 编译器内部的结果：
 CWord::Cword()
 {
 	// 直接表用string的默认构造函数
