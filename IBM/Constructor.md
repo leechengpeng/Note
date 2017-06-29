@@ -116,3 +116,58 @@ inline Person::Person()
 1. 如果未显示定义默认构造函数，编译器将提供一个合成构造函数
 2. 编写默认构造函数时，最好显示初始化所有成员变量，特别是内置类型
 3. 编译器会自动在默认构造函数中附加未显示定义的成员变量初始化代码，以保证所有成员变量都得到正确的初始化
+
+## 2. 初始化列表（Initializatoin List）
+常用初始化成员变量方法：
+```C++
+class CWord
+{
+public:
+	CWord()
+	{
+		m_Word  = "";
+		m_Count = 0;
+	}
+
+private:
+	std::string  m_Word;
+	unsigned int m_Count;
+};
+```
+这段代码没有明显的问题，只是在效率上比初始化列表的方法低。编译器内部扩张的结果如下：
+```C++
+CWord::Cword()
+{
+	// m_Word不会被直接初始化，而是被扩张成4个步骤：
+	m_Word.string::string();		// 1. 调用m_Word的默认构造函数初始化m_Word
+	std::string Temp = std::string("");	// 2. 创建零时对象
+	m_Word.string::operator=(Temp);		// 3. 调用string的赋值构造函数赋值m_Word
+	Temp.string::~string();			// 4. 销毁零时对象
+	
+	m_Count = 0；
+}
+```
+使用初始化列表：
+```C++
+class CWord
+{
+public:
+	CWord() : m_Word()
+	{
+		m_Count = 0;
+	}
+
+private:
+	std::string  m_Word;
+	unsigned int m_Count;
+};
+```
+编译器内部的结果如下：
+```C++
+CWord::Cword()
+{
+	// 直接表用string的默认构造函数
+	m_Word.string::string();
+	m_Count = 0；
+}
+```
