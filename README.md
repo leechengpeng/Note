@@ -3,7 +3,6 @@
  - [C++的三种new](CPP/New.md)
  - [使用对象管理资源](CPP/SmartPointer.md)
  - [内存池(TODO)](CPP/MemoryPool.md)
- - 线程池
 
 ## Algorithm
 
@@ -22,7 +21,7 @@
  - [C++ Object Model](IBM/ObjectModel.md)
 
 ## 其它
-#### 
+ - 线程池
  - 信号量
  
 ## 附录
