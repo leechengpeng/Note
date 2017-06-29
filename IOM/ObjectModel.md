@@ -45,7 +45,7 @@ C++对象模型是由**简单对象模型**派生而来，并且对**内存空�
 > 	1. 每个类（class）维护一个虚函数表（Virtual Function Table，VFT）。VFT的第一个slot存放这个类的**type_info**，后续slot分别存放类所对应的虚函数
 > 	2. 每个**类对象**存放一个**vptr**指向VFT（**vptr**的设定和重置是由类的构造函数、析构函数和复制拷贝预算符控制）
 
-![此处需要插入图片](http://xx.com)
+![C++对象模型](https://github.com/leechengpeng/Note/blob/master/Resources/Images/C%2B%2B%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B.png)
 
 **C++对象模型**的主要优点在于它的空间和存取效率比较高。主要缺点则是：如果应用程序本身没有变动，而是其所用到的类对象的非静态成员变量变动（增加、删除或更改），那么该应用程序就必须重新编译。
 
