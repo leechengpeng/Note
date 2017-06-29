@@ -1,5 +1,4 @@
 ## 1. stack
-
 stack是一种先进后出的数据结构，所有操作都是在栈顶进行。除了栈顶外，没有任何方法可以访问到stack的其他元素（That is to say：没有遍历操作）。
 
 ### 实现
@@ -11,3 +10,4 @@ std::stack<int, std::list<int>> IStack;	// 以std::list<int>作为stack的低层
 ```
 
 ## 2. queue
+queue是一种先进先出的数据结构。queue也是一种容器适配器，也是以deque作为低层实现的容器，同样也可以使用list作为低层容器。
