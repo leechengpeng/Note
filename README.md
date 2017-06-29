@@ -20,7 +20,8 @@
 
 ## Inside the C++ Object Model
 #### 
- - [C++ Object Model](IBM/ObjectModel.md)
+ - [C++ Object Model](IOM/ObjectModel.md)
+ - [构造函数语义学](IOM/Constructor.md)
 
 ## 其它
  - 线程池
