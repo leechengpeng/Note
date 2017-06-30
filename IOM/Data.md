@@ -1,7 +1,7 @@
 ## C++ Data语意学
 
 ### 1. 类的大小
-定义一个空的类`CAnimal`：
+定义一个空的类`CPoint3d`：
 ```C++
 class CPoint3d {};
 
