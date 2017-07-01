@@ -1,7 +1,7 @@
 ## AVL Tree (Adelson-Velskii-Landis Tree)
 AVL Tree是一个“加了额外平衡添加”的BST，AVL不能保证BST的深度为Log(N)，但它能保证BST中任意结点的左右子树深度相差最多为1。
 
-调整“插入点至根节点”路径上，平衡状态被破坏的节点中最深那个节点**X**，便可以让整棵树重新保持平衡。具体流程如下图：
+如下图所示，将点11插如AVL-Tree中，此灰色节点22和18违反AVL-Tree的规则。此时调整“插入点至根节点”路径上，平衡状态被破坏的节点中最深那个节点**X(18)**，便可以让整棵树重新保持平衡。具体流程如下图：
 ![non-AVL Tree](https://github.com/leechengpeng/Note/blob/master/Resources/Images/IMG_0003.PNG)
 
 由于节点**X**最多拥有两个子节点，左右子节点的深度相差为2时就是不平衡状态。根据插入点的位置，将破坏平衡的情况分为四种：
