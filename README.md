@@ -14,7 +14,7 @@
  - [list](STL/list.md)
  - deque
  - [stack&queue](STL/stack_queue.md)
- - **heap**：不属于STL组件，用作**priority queue**的底层实现机制。heap是一棵完全二叉树，除了叶子节点外其它层都依次填满，叶子节点也从左至依次填满。heap分为max-heap和min-heap，STL heap是max-heap。heap的push使用上溯操作插入新节点，pop使用下溯操作弹出根节点。
+ - **heap**：不属于STL组件，用作**priority queue**的底层实现机制。heap是一棵完全二叉树，分为max-heap和min-heap，STL heap是max-heap。heap的push使用上溯操作插入新节点，pop使用下溯操作弹出根节点。
  
 #### 关联式容器
  - [BST](STL/BST.md)
