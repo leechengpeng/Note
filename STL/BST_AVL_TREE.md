@@ -9,9 +9,11 @@ AVL Tree是一个“加了额外平衡添加”的BST，AVL不能保证BST的深
 1. 插入点位于**X**的左子节点的左子树：左左
 
 ![左左](https://github.com/leechengpeng/Note/blob/master/Resources/Images/IMG_0005.PNG)
+
 2. 插入点位于**X**的左子节点的右子树：左右
 
 ![右右](https://github.com/leechengpeng/Note/blob/master/Resources/Images/IMG_0006.PNG)
+
 3. 插入点位于**X**的右子节点的左子树：右左
 4. 插入点位于**X**的右子节点的右子树：右右
 
