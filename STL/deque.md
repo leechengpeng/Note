@@ -6,7 +6,7 @@ deque的迭代器属于Random Access Iterator，但它不是像vector那样简�
 * balabala1
 * balabala2
 
-由于deque复杂的迭代器设计，导致了deque相关的预算效率较低。因此，除非必要，对于可变长度的数列应尽量使用vector。对deque进行排序时，为了提高效率，可以先将数据放入vector中排好序过后，然后再放回deque中。
+deque迭代器设计比较复杂，导致其相关的运算效率较低。因此，对于可变长度的数列应尽量使用vector。例如，在对deque进行排序时，为了提高效率，可以先将数据放入vector中排好序过后，然后再放回deque中。
 
 ### 存储策略
 deque数据结构中，设计了一个指针数组**map**（类型为T\*\*），map中存放了一系列指针，指向真实存放数据的区域（一大块连续的数据区域）。
