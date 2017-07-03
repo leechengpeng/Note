@@ -8,7 +8,7 @@
 ```C++
 // 注：stack只对一端进行操作，因此还可以使用std::vector<int>作为其低层实现。
 std::stack<int, std::deque<int>> IStack; // 默认
-std::stack<int, std::list<int>>  IStack;	// 以std::list<int>作为stack的低层容器
+std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低层容器
 ```
 
  - [heap ](heap.md)：不属于STL组件，用作**priority queue**的底层实现机制。heap是一棵完全二叉树，分为max-heap和min-heap，STL heap是max-heap。heap的push使用上溯操作插入新节点，pop使用下溯操作弹出根节点。heap sort不断使用pop操作即可完成。
