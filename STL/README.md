@@ -4,9 +4,9 @@
  - [vector](vector.md)
  - [list](list.md)
  - deque
- - **stack&queue**：stack是一种**先进后出**的数据结构，而queue则是一种**先进先出**的数据结构。stack&queue都是以其他容器作为低层实现，这种方法叫做适配器（Adapter），因此，STL stack&queue并不被归类为容器，而是被归类为容器适配器（Container Adapter）。
+ - **stack&queue**：stack是一种**先进后出**的数据结构，而queue则是一种**先进先出**的数据结构。stack&queue都是以其他容器作为低层实现，这种方法叫做适配器（Adapter），因此，STL stack&queue并不被归类为容器，而是被归类为容器适配器（Container Adapter）。两种容器都只对其一端进行操作，因此，它们都没有遍历操作（没有迭代器）。
 ```C++
-// 注：stack只对一端进行操作，因此还可以使用std::vector<int>作为其低层实现。
+// 注：stack只对其一端进行操作，因此还可以使用std::vector<int>作为其低层实现。
 std::stack<int, std::deque<int>> IStack; // 默认
 std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低层容器
 ```
