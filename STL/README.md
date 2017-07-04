@@ -25,7 +25,7 @@ std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低�
     * multimap
     
 2. 基于Hashtable的关联式容器
-    * hashtable
+    * hashtable
     * hash_set
     * hash_map
     * hash_multiset
