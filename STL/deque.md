@@ -9,10 +9,10 @@ deque的迭代器属于Random Access Iterator，但它不是像vector那样简�
 ```C++
 struct __deque_iterator
 {
-  T* cur;
-  T* first;
-  T* last;
-  map_pointer node;
+	T* cur;           // 指向当前具体的元素
+	T* first;         // 指向当前缓冲区的头部
+	T* last;          // 指向当前缓冲区的尾部
+	map_pointer node; // 指向当前迭代器所在map的位置
 };
 ```
 
