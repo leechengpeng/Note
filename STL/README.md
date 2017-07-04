@@ -15,8 +15,18 @@ std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低�
  - **priority queue**：使用heap作为其底层实现机制，每次得到queue中优先级最高的原素，直接使用heap的pop即可。
  
 ### 关联式容器
-1. 底层实现
-    * [BST](BST.md)
+1. 基于BST的关联式容器
+    * [BST](BST.md)
     * [AVL Tree](BST_AVL_TREE.md)
     * [RB Tree(TODO)](BST_RB_TREE.md)
-2. 关联式容器
+    * set
+    * map
+    * multiset
+    * multimap
+    
+2. 基于Hashtable的关联式容器
+    * hashtable
+    * hash_set
+    * hash_map
+    * hash_multiset
+    * hash_multimap
