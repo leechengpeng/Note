@@ -16,7 +16,7 @@ std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低�
  
 ### 关联式容器
 1. 基于BST的关联式容器
-    * [BST](BST.md)
+    * [BST](BST.md)
     * [AVL Tree](BST_AVL_TREE.md)
     * [RB Tree(TODO)](BST_RB_TREE.md)
     * set
