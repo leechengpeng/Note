@@ -6,7 +6,14 @@ deque数据结构中，设计了一个指针数组**map**（类型为T\*\*），
 
 ### 迭代器
 deque的迭代器属于Random Access Iterator，但它不是像vector那样简单的迭代器，设计较为复杂：
-* balabala1
-* balabala2
+```C++
+struct __deque_iterator
+{
+  T* cur;
+  T* first;
+  T* last;
+  map_pointer node;
+};
+```
 
 deque迭代器设计比较复杂，导致其相关的运算效率较低。因此，对于可变长度的数列应尽量使用vector。例如，在对deque进行排序时，为了提高效率，可以先将数据放入vector中排好序过后，然后再放回deque中。
