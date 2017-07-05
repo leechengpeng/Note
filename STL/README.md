@@ -26,9 +26,9 @@ std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低�
 - **map**：
     * map的元素值是Key和Value对，其中Key的值不允许修改（会破坏RB的结构），Value的值可以随意修改
     * map的删除和插入操作同set一样也不会让其迭代器失效  
-- **multiset**
-- **multimap**
-    
+- **multiset**：multiset调用RB-tree的insert_equal()，让其可以插入重复元素
+- **multimap**：multimap调用RB-tree的insert_equal()，让其可以插入重复元素
+    
 ##### 2. 基于Hashtable的关联式容器
 - hashtable
 - hash_set
