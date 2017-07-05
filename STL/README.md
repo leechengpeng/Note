@@ -23,10 +23,11 @@ std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低�
     * set的元素值就是键值，其所有元素都会根据其键值自动被排序（中序遍历：左根右，前序：根左右，后序：左右根）
     * 由于set元素值就是键值，也不能通过set的迭代器改变set的元素值，删除set的键值将会严重影响set的结构
     * set的删除和插入操作不会让其迭代器失效
-
-- map
-- multiset
-- multimap
+- **map**：
+    * map的元素值是Key和Value对，其中Key的值不允许修改（会破坏RB的结构），Value的值可以随意修改
+    * map的删除和插入操作同set一样也不会让其迭代器失效  
+- **multiset**
+- **multimap**
     
 ##### 2. 基于Hashtable的关联式容器
 - hashtable
