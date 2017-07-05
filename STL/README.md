@@ -20,8 +20,9 @@ std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低�
 - [AVL Tree](BST_AVL_TREE.md)
 - [RB Tree(TODO)](BST_RB_TREE.md)
 - **set**：
-    * set中所有元素都会根据其键值自动被排序
-    * set的元素值就是键值，因此不能通过set的迭代器改变set的元素值，删除set的键值将会严重影响set的结构。
+    * set中所有元素都会根据其键值自动被排序
+    * set的元素值就是键值，因此不能通过set的迭代器改变set的元素值，删除set的键值将会严重影响set的结构。
+    
 - map
 - multiset
 - multimap
