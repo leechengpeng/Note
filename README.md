@@ -20,7 +20,7 @@
 ## 计划
 #### Step1：
 - [x] 基础语言：《Essential C++》
-- [ ] 数据结构：[《STL源码剖析》](STL/README.md)
+- [x] 数据结构：[《STL源码剖析》](STL/README.md)
 - [ ] 面向对象：《Inside the C++ Object Model》
 - [ ] 基本算法：《编程之法：面试与算法心得》
 - [ ] 设计模式：《设计模式之禅》
