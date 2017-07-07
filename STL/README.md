@@ -1,5 +1,5 @@
 # STL
-### TODO: 红黑树、hashtable、仿函数
+### TODO: hashtable、仿函数
 
 ### 序列式容器
  - [vector](vector.md)
