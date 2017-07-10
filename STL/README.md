@@ -1,5 +1,4 @@
 # STL
-### TODO: hashtable、仿函数
 
 ### 序列式容器
  - [vector](vector.md)
