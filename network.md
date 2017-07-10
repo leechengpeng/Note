@@ -13,7 +13,7 @@
 |物理层|
 #### TCP/IP四层模型
 |TCP/IP四层模型|协议族|
-|---|---|
+|:---|:---|
 |应用层|HTTP、FTP、SMTP、IMAP、DNS、DHCP...|
 |传输层|TCP、UDP...|
 |网络层|IP、ICMP、ARP、RARP|
