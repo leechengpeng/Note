@@ -16,7 +16,7 @@
 ## 其它
  - 线程池
  - 信号量
- - [网络](network.md)
+ - [计算机网络](network.md)
 
 ## 计划
 #### Step1：
@@ -32,7 +32,6 @@
 - [ ] Leetcode
 - [ ] 图形学 数学
 - [ ] 操作系统：Linux
-- [ ] 计算机网络
 
 ## 附录
 * [c++研发面试](http://blog.csdn.net/Watson2016/article/details/69944537?locationNum=14&fps=1)
