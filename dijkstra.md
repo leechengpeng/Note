@@ -23,92 +23,92 @@ S  *  *  P
 ### 实现
 #### DistanceTable的设计
 ```C++
-	class CDistanceTable
+class CDistanceTable
+{
+public:
+	CDistanceTable(unsigned vNumVertices);
+	CDistanceTable(unsigned vNumVertices, unsigned vSourceIndex);
+	~CDistanceTable();
+
+	void setSource(unsigned vSourceIndex);
+	void setDistance(unsigned vIndex, unsigned vDistance);
+
+	unsigned getDistanceToSource(unsigned vIndex) const;
+	bool isVisited(unsigned vIndex) const;
+
+private:
+	struct VertexAttr
 	{
-	public:
-		CDistanceTable(unsigned vNumVertices);
-		CDistanceTable(unsigned vNumVertices, unsigned vSourceIndex);
-		~CDistanceTable();
+		VertexAttr() : Visited(false), DistanceToSource(UINT_MAX) {}
 
-		void setSource(unsigned vSourceIndex);
-		void setDistance(unsigned vIndex, unsigned vDistance);
-
-		unsigned getDistanceToSource(unsigned vIndex) const;
-		bool isVisited(unsigned vIndex) const;
-
-	private:
-		struct VertexAttr
-		{
-			VertexAttr() : Visited(false), DistanceToSource(UINT_MAX) {}
-
-			bool     Visited;
-			unsigned DistanceToSource;
-		};
-
-		unsigned    m_NumVertices;
-		VertexAttr* m_Table;
-
-		friend unsigned getMinDistanceIndexAndSetVisited(const CDistanceTable& vDT);
+		bool     Visited;
+		unsigned DistanceToSource;
 	};
 
-	CDistanceTable::CDistanceTable(unsigned vNumVertices) : m_NumVertices(vNumVertices), m_Table(new VertexAttr[m_NumVertices]())
-	{
-		
-	}
+	unsigned    m_NumVertices;
+	VertexAttr* m_Table;
 
-	CDistanceTable::CDistanceTable(unsigned vNumVertices, unsigned vSourceIndex) : CDistanceTable(vNumVertices)
-	{
-		setSource(vSourceIndex);
-	}
+	friend unsigned getMinDistanceIndexAndSetVisited(const CDistanceTable& vDT);
+};
 
-	CDistanceTable::~CDistanceTable()
-	{
-		delete[] m_Table;
-		m_Table = nullptr;
-	}
+CDistanceTable::CDistanceTable(unsigned vNumVertices) : m_NumVertices(vNumVertices), m_Table(new VertexAttr[m_NumVertices]())
+{
 
-	void CDistanceTable::setSource(unsigned vSourceIndex)
-	{
-		_ASSERT(vSourceIndex < m_NumVertices);
-		m_Table[vSourceIndex].DistanceToSource = 0;
-	}
+}
 
-	void CDistanceTable::setDistance(unsigned vIndex, unsigned vDistance)
-	{
-		_ASSERT(vIndex < m_NumVertices);
-		if (vDistance < m_Table[vIndex].DistanceToSource) m_Table[vIndex].DistanceToSource = vDistance;
-	}
+CDistanceTable::CDistanceTable(unsigned vNumVertices, unsigned vSourceIndex) : CDistanceTable(vNumVertices)
+{
+	setSource(vSourceIndex);
+}
 
-	unsigned CDistanceTable::getDistanceToSource(unsigned vIndex) const
-	{
-		_ASSERT(vIndex < m_NumVertices);
-		return m_Table[vIndex].DistanceToSource;
-	}
+CDistanceTable::~CDistanceTable()
+{
+	delete[] m_Table;
+	m_Table = nullptr;
+}
 
-	bool CDistanceTable::isVisited(unsigned vIndex) const
-	{
-		_ASSERT(vIndex < m_NumVertices);
-		return m_Table[vIndex].Visited;
-	}
+void CDistanceTable::setSource(unsigned vSourceIndex)
+{
+	_ASSERT(vSourceIndex < m_NumVertices);
+	m_Table[vSourceIndex].DistanceToSource = 0;
+}
 
-	unsigned getMinDistanceIndexAndSetVisited(const CDistanceTable& vDT)
-	{
-		unsigned MinIndex = -1;
-		unsigned MinDistance = UINT_MAX;
+void CDistanceTable::setDistance(unsigned vIndex, unsigned vDistance)
+{
+	_ASSERT(vIndex < m_NumVertices);
+	if (vDistance < m_Table[vIndex].DistanceToSource) m_Table[vIndex].DistanceToSource = vDistance;
+}
 
-		for (unsigned i = 0; i < vDT.m_NumVertices; ++i)
+unsigned CDistanceTable::getDistanceToSource(unsigned vIndex) const
+{
+	_ASSERT(vIndex < m_NumVertices);
+	return m_Table[vIndex].DistanceToSource;
+}
+
+bool CDistanceTable::isVisited(unsigned vIndex) const
+{
+	_ASSERT(vIndex < m_NumVertices);
+	return m_Table[vIndex].Visited;
+}
+
+unsigned getMinDistanceIndexAndSetVisited(const CDistanceTable& vDT)
+{
+	unsigned MinIndex = -1;
+	unsigned MinDistance = UINT_MAX;
+
+	for (unsigned i = 0; i < vDT.m_NumVertices; ++i)
+	{
+		if (!vDT.m_Table[i].Visited && vDT.m_Table[i].DistanceToSource < MinDistance)
 		{
-			if (!vDT.m_Table[i].Visited && vDT.m_Table[i].DistanceToSource < MinDistance)
-			{
-				MinIndex = i;
-				MinDistance = vDT.m_Table[i].DistanceToSource;
-			}
+			MinIndex = i;
+			MinDistance = vDT.m_Table[i].DistanceToSource;
 		}
-
-		if (MinIndex != -1) { vDT.m_Table[MinIndex].Visited = true; }
-
-		return MinIndex;
 	}
+
+	if (MinIndex != -1) { vDT.m_Table[MinIndex].Visited = true; }
+
+	return MinIndex;
+}
 ```
 
 
