@@ -133,10 +133,10 @@ bool savePrincess(const char vMap[HEIGHT][WIDTH], unsigned vRemainTime)
 		unsigned Distance = DistanceTable.getDistanceToSource(MinDistanceIndex) + 1;
 
 		// NOTE: Step3: 更新DistanceTable中点S与其所有邻接顶点得距离值
-		if (X > 0)			{ updateDistanceTable<WIDTH, HEIGHT>(vMap, DistanceTable, X - 1, Y, Distance); }
+		if (X > 0)		{ updateDistanceTable<WIDTH, HEIGHT>(vMap, DistanceTable, X - 1, Y, Distance); }
 		if (X + 1 < WIDTH)	{ updateDistanceTable<WIDTH, HEIGHT>(vMap, DistanceTable, X + 1, Y, Distance); }
-		if (Y > 0)			{ updateDistanceTable<WIDTH, HEIGHT>(vMap, DistanceTable, X, Y - 1, Distance); }
-		if (Y + 1 < HEIGHT) { updateDistanceTable<WIDTH, HEIGHT>(vMap, DistanceTable, X, Y + 1, Distance); }
+		if (Y > 0)		{ updateDistanceTable<WIDTH, HEIGHT>(vMap, DistanceTable, X, Y - 1, Distance); }
+		if (Y + 1 < HEIGHT) 	{ updateDistanceTable<WIDTH, HEIGHT>(vMap, DistanceTable, X, Y + 1, Distance); }
 	}
 
 	unsigned PrincessIndex = findSpecialCharIndex<WIDTH, HEIGHT>(vMap, 'P');
