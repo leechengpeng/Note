@@ -18,6 +18,7 @@
  - 信号量
  - [计算机网络](network.md)
  - [Dijkstra](dijkstra.md)
+ - [一些简单的算法题](simple_algorithm.md)
 
 ## 计划
 #### Step1：
