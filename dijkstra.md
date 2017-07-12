@@ -1,8 +1,8 @@
 # 迪杰斯特拉（Dijkstra）单源最短路径算法
 ### 算法流程
-1. 创建源顶点到距离集合**DistanceSet**并初始化：起始点为0，其他点为无限远
-2. 选择**DistanceSet**中未标记的**最短距离顶点S**，然后将其标记
-3. 更新**DistanceSet**中**点S**所有邻接顶点得距离值：如果**点S**到其邻接点小于该邻接点之前的距离则更新
+1. 创建源顶点到其他顶点的距离表**DistanceTable**并初始化：起始点距离为0，其他点距离为无限远
+2. 选择**DistanceTable**中未标记的**最短距离顶点S**，然后将其标记为已访问
+3. 更新**DistanceTable**中**点S**与其所有邻接顶点得距离值（邻接顶点未被访问过且当前距离小于之前距离才更新）
 4. 循环流程2和流程3直至取不出最短距离点：**所有点都被标记**或者**当前最短距离为无限远**
 
 ### 例题：营救公主
@@ -19,6 +19,97 @@ N = 4，M = 4，T = 10
 S  *  *  P
 ```
 #### 输出示例：true
+
+### 实现
+#### DistanceTable的设计
+```C++
+	class CDistanceTable
+	{
+	public:
+		CDistanceTable(unsigned vNumVertices);
+		CDistanceTable(unsigned vNumVertices, unsigned vSourceIndex);
+		~CDistanceTable();
+
+		void setSource(unsigned vSourceIndex);
+		void setDistance(unsigned vIndex, unsigned vDistance);
+
+		unsigned getDistanceToSource(unsigned vIndex) const;
+		bool isVisited(unsigned vIndex) const;
+
+	private:
+		struct VertexAttr
+		{
+			VertexAttr() : Visited(false), DistanceToSource(UINT_MAX) {}
+
+			bool     Visited;
+			unsigned DistanceToSource;
+		};
+
+		unsigned    m_NumVertices;
+		VertexAttr* m_Table;
+
+		friend unsigned getMinDistanceIndexAndSetVisited(const CDistanceTable& vDT);
+	};
+
+	CDistanceTable::CDistanceTable(unsigned vNumVertices) : m_NumVertices(vNumVertices), m_Table(new VertexAttr[m_NumVertices]())
+	{
+		
+	}
+
+	CDistanceTable::CDistanceTable(unsigned vNumVertices, unsigned vSourceIndex) : CDistanceTable(vNumVertices)
+	{
+		setSource(vSourceIndex);
+	}
+
+	CDistanceTable::~CDistanceTable()
+	{
+		delete[] m_Table;
+		m_Table = nullptr;
+	}
+
+	void CDistanceTable::setSource(unsigned vSourceIndex)
+	{
+		_ASSERT(vSourceIndex < m_NumVertices);
+		m_Table[vSourceIndex].DistanceToSource = 0;
+	}
+
+	void CDistanceTable::setDistance(unsigned vIndex, unsigned vDistance)
+	{
+		_ASSERT(vIndex < m_NumVertices);
+		if (vDistance < m_Table[vIndex].DistanceToSource) m_Table[vIndex].DistanceToSource = vDistance;
+	}
+
+	unsigned CDistanceTable::getDistanceToSource(unsigned vIndex) const
+	{
+		_ASSERT(vIndex < m_NumVertices);
+		return m_Table[vIndex].DistanceToSource;
+	}
+
+	bool CDistanceTable::isVisited(unsigned vIndex) const
+	{
+		_ASSERT(vIndex < m_NumVertices);
+		return m_Table[vIndex].Visited;
+	}
+
+	unsigned getMinDistanceIndexAndSetVisited(const CDistanceTable& vDT)
+	{
+		unsigned MinIndex = -1;
+		unsigned MinDistance = UINT_MAX;
+
+		for (unsigned i = 0; i < vDT.m_NumVertices; ++i)
+		{
+			if (!vDT.m_Table[i].Visited && vDT.m_Table[i].DistanceToSource < MinDistance)
+			{
+				MinIndex = i;
+				MinDistance = vDT.m_Table[i].DistanceToSource;
+			}
+		}
+
+		if (MinIndex != -1) { vDT.m_Table[MinIndex].Visited = true; }
+
+		return MinIndex;
+	}
+```
 
 
 
