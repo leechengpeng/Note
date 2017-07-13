@@ -16,5 +16,5 @@
 ## 3. 统计论坛在线人数，注册用户有两亿个，每个用户的登录时间和退出时间都会存放在日志中，颗粒度为秒
 1. 将天转换为颗粒度秒：3600 * 24 = 86400s
 2. 定义一个数组Delta[86400]，每个元素表示**当前这一秒**的**人数变化值（人数变化可能为负）**：读取日志数据，将每位用户登录对应的时间点加1，退出对应的时间点减1
-3. 定义另外一个数组OnlineNum[86400]，每个元素表示当前这一秒在线人数：`OnlineNum[0] = Delta[0], OnlineNum[1] = OnlineNum[0] + Delta[1], ..., OnlineNum[n] = OnlineNum[n-1] + Delta[n]`
+3. 定义另外一个数组OnlineNum[86400]，每个元素表示当前这一秒在线人数：`OnlineNum[0] = Delta[0], OnlineNum[1] = OnlineNum[0] + Delta[1]` -> `OnlineNum[n] = OnlineNum[n-1] + Delta[n]`
 > 注意：如果用户同时登录（当然不可能），int数据类型存放不下所有用户，需考虑越界问题
