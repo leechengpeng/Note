@@ -20,6 +20,8 @@
  - [Dijkstra](dijkstra.md)
  - [简单的算法题](simple_algorithm.md)
 
+## [内推](work.md)
+
 ## 计划
 #### Step1：
 * 高优先级：
