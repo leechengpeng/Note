@@ -25,11 +25,38 @@ SGI STL的内存池分为一级配置器和二级配置器：
 STL内存池的基本工作流程如下：
 1. 外部调用**配置器allocate**向内存池申请内存
 2. 内存大于128bytes使用**一级配置器**
-3. 内存小于128bytes使用**二级配置器**
+3. 内存小于128bytes使用**二级配置器**，详细请阅读代码`void* CMemoryPool::allocate(unsigned vBytes)`
     * allocate通过**内存对齐**的方式（15bytes，实际分配16bytes）在**free_list**中找到合适起点位置free_list[x]，x范围为[0, 15]
-    * \*free_list[x]链表头不为NULL，则直接返回
+    * \*free_list[x]链表头不为NULL，则直接返回链表头那块地址，并将这块内存移除表头
     * 内存块表头为NULL，重新分配20个此规格的内存空间链表
 
+```C++
+void* CMemoryPool::allocate(unsigned vBytes)
+{
+	// 一级配置器
+	if (vBytes > m_MaxBytes) { return malloc(vBytes); }
+
+	// 二级配置器
+	obj** pFreeList = free_list + _FREELIST_INDEX(vBytes);
+	obj* pMemory = *pFreeList;
+	
+	// 直接返回链表头地址，并移除这块地址
+	if (pMemory != nullptr)
+	{
+		*pFreeList = pMemory->free_list_link;
+	}
+	// 请求分配20块此规格空间，并返回头部地址
+	else
+	{
+		pMemory = reinterpret_cast<obj*>(_refill(_ROUND_UP(vBytes)));
+	}
+
+	return pMemory;
+}
+```
+
+重新分配内存策略如下：
+1. 
 
 > 参考：[http://www.cnblogs.com/Creator/archive/2012/04/11/2430592.html](http://www.cnblogs.com/Creator/archive/2012/04/11/2430592.html)
 
