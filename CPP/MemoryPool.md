@@ -28,7 +28,7 @@ STL内存池的基本工作流程如下：
 3. 内存小于128bytes使用**二级配置器**，详细请阅读代码`void* CMemoryPool::allocate(unsigned vBytes)`
     * allocate通过**内存对齐**的方式（15bytes，实际分配16bytes）在**free_list**中找到合适起点位置free_list[x]，x范围为[0, 15]
     * \*free_list[x]链表头不为NULL，则直接返回链表头那块地址，并将这块内存移除表头
-    * 内存块表头为NULL，重新额外分配20块此规格的内存空间链表
+    * 内存块表头为NULL，重新额外分配20块此规格的内存空间链表
 
 ```C++
 void* CMemoryPool::allocate(unsigned vBytes)
