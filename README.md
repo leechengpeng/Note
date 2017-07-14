@@ -20,9 +20,7 @@
  - [Dijkstra](dijkstra.md)
  - [简单的算法题](simple_algorithm.md)
 
-## [内推](work.md)
-
-## 计划
+## 计划 & [内推](work.md)
 #### Step1：
 * 高优先级：
 - [x] 基础语言：《Essential C++》
