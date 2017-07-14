@@ -26,9 +26,9 @@ STL内存池的基本工作流程如下：
 1. 外部调用**配置器allocate**向内存池申请内存
 2. 内存大于128bytes使用**一级配置器**
 3. 内存小于128bytes使用**二级配置器**
-    * allocate通过**内存对齐**的方式（15bytes，实际分配16bytes）在**free_list**中找到合适起点位置free_list[x]，x范围为[0, 15]
-    * \*free_list[x]链表头不为NULL，则直接返回
-    * 内存块表头为NULL，重新分配20个此规格的内存空间链表
+    * allocate通过**内存对齐**的方式（15bytes，实际分配16bytes）在**free_list**中找到合适起点位置free_list[x]，x范围为[0, 15]
+    * \*free_list[x]链表头不为NULL，则直接返回
+    * 内存块表头为NULL，重新分配20个此规格的内存空间链表
 
 
 > 参考：[http://www.cnblogs.com/Creator/archive/2012/04/11/2430592.html](http://www.cnblogs.com/Creator/archive/2012/04/11/2430592.html)
