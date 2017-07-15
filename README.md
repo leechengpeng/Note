@@ -3,6 +3,7 @@
  - [C++的三种new](CPP/New.md)
  - [使用对象管理资源](CPP/SmartPointer.md)
  - [内存池](CPP/MemoryPool.md)
+ - [虚函数表](CPP/VirutalTable.md)
 
 ## Algorithm
 
