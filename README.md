@@ -20,20 +20,7 @@
  - [Dijkstra](dijkstra.md)
  - [简单的算法题](simple_algorithm.md)
 
-## 计划 & [内推](work.md)
-#### Step1：
-* 高优先级：
-- [x] 基础语言：《Essential C++》
-- [x] 数据结构：[《STL源码剖析》](STL/README.md)
-- [ ] 基本算法：《编程之法：面试与算法心得》
-* 低优先级：
-- [ ] 面向对象：《Inside the C++ Object Model》
-- [ ] 设计模式：《设计模式之禅》
-
-#### Step2：
-- [ ] Leetcode
-- [ ] 图形学 数学
-- [ ] 操作系统：Linux
+##  [计划 & 内推](work.md)
 
 ## 附录
 * [c++研发面试](http://blog.csdn.net/Watson2016/article/details/69944537?locationNum=14&fps=1)
