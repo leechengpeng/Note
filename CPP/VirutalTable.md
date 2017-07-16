@@ -30,6 +30,8 @@ VS2013运行结果为：
 
 > Shape circumference
 
+![虚函数表](https://github.com/leechengpeng/Note/blob/master/Resources/Images/vt1.png)
+
 ### 2. 无覆盖继承
 ```C++
 class Triangle : public Shape
@@ -57,6 +59,8 @@ VS2013运行结果为：
 > Shape circumference
 
 > This is a triangle
+
+![虚函数表](https://github.com/leechengpeng/Note/blob/master/Resources/Images/vt2.png)
 
 由上述代码可知无覆盖继承有以下特点：
 1. 虚函数按照其**声明顺序**存放于表中
@@ -90,6 +94,8 @@ VS2013运行结果为：
 > Rectangle circumference
 
 > This is a triangle
+
+![虚函数表](https://github.com/leechengpeng/Note/blob/master/Resources/Images/vt3.png)
 
 由上述代码可知有覆盖继承有以下特点：
 1. 覆盖虚函数会覆盖原有父类的虚函数
