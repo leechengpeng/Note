@@ -39,8 +39,8 @@ public:
 };
 ```
 ```C++
-Triangle triangle;
-int* pVirtualTable = *reinterpret_cast<int**>(&triangle);
+Shape* pTriangle = new Triangle();
+int* pVirtualTable = *reinterpret_cast<int**>(&(*pTriangle));
 
 pFun pArea = reinterpret_cast<pFun>(*(pVirtualTable + 0));
 pFun pCircumference = reinterpret_cast<pFun>(*(pVirtualTable + 1));
@@ -61,3 +61,42 @@ VS2013运行结果为：
 由上述代码可知无覆盖继承有以下特点：
 1. 虚函数按照其**声明顺序**存放于表中
 2. 父类的虚函数在子类的虚函数前面
+
+### 3. 有覆盖继承
+```C++
+class Rectangle : public Shape
+{
+public:
+	virtual void circumference() override { std::cout << "Rectangle circumference" << std::endl; }
+	virtual void description() { std::cout << "This is a rectangle" << std::endl; }
+};
+```
+```C++
+Shape* pRectangle = new Rectangle();
+int* pVirtualTable = *reinterpret_cast<int**>(&(*pRectangle));
+
+pFun pArea = reinterpret_cast<pFun>(*(pVirtualTable + 0));
+pFun pCircumference = reinterpret_cast<pFun>(*(pVirtualTable + 1));
+pFun pDescription = reinterpret_cast<pFun>(*(pVirtualTable + 2));
+
+pArea();
+pCircumference();
+pDescription();
+```
+
+VS2013运行结果为：
+> Shape Area
+
+> Rectangle circumference
+
+> This is a triangle
+
+由上述代码可知有覆盖继承有以下特点：
+1. 覆盖虚函数会覆盖原有父类的虚函数
+
+通过有覆盖继承，我们就可以看到类似于下面的代码：
+```C++
+Base* pDerived = new Derive();
+pDerived->Fun(); // Fun被Derive类覆盖
+```
+由`pDerived`指向的虚函数表中`Fun()`的位置已经被`Derive::Fun()`函数地址所取代，实际调用时也就调用了子类对应的`Fun`函数。这样就实现了多态。
