@@ -29,3 +29,31 @@ VS2013运行结果为：
 > Shape Area
 
 > Shape circumference
+
+### 2. 无覆盖继承
+```C++
+class Triangle : public Shape
+{
+public:
+	virtual void description() { std::cout << "This is a triangle" << std::endl; }
+};
+```
+```C++
+Triangle triangle;
+int* pVirtualTable = *reinterpret_cast<int**>(&triangle);
+
+pFun pArea = reinterpret_cast<pFun>(*(pVirtualTable + 0));
+pFun pCircumference = reinterpret_cast<pFun>(*(pVirtualTable + 1));
+pFun pDescription = reinterpret_cast<pFun>(*(pVirtualTable + 2));
+
+pArea();
+pCircumference();
+pDescription();
+```
+
+VS2013运行结果为：
+> Shape Area
+
+> Shape circumference
+
+> This is a triangle
