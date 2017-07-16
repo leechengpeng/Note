@@ -112,3 +112,5 @@ pDerived->Fun(); // Fun被Derive类覆盖
 1. 子类一次存放多个父类的虚函数表
 2. 子类成员函数被放到第一个父类的虚函数表中
 3. 子类覆盖函数会替换其对应的父类对应虚函数
+
+> 参考：[http://blog.csdn.net/haoel/article/details/1948051](http://blog.csdn.net/haoel/article/details/1948051)
