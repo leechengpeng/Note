@@ -8,6 +8,7 @@
 ## Algorithm
 
  - [交换&插入排序](insert_swap_sort.md)
+ - [快速排序](quick_sort.md)
  - [Dijkstra](dijkstra.md)
 
 ## Inside the C++ Object Model
