@@ -16,7 +16,7 @@
 #### Step1：
 * 高优先级：
 - [x] 基础语言：《Essential C++》
-- [x] 数据结构：[《STL源码剖析》](STL/README.md)
+- [x] 数据结构：《STL源码剖析》
 - [ ] 基本算法：《编程之法：面试与算法心得》
 * 低优先级：
 - [ ] 面向对象：《Inside the C++ Object Model》
