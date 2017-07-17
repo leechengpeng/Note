@@ -94,6 +94,9 @@ void shell_sort(std::array<T, LEN>& voArray)
 }
 ```
 
+### 3. 交换排序
+#### 3.1 快速排序
+
 
 参考文献：
 * [比较排序算法 —— by 匠心十年](http://www.cnblogs.com/gaochundong/p/comparison_sorting_algorithms.html)
