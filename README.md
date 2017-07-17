@@ -7,7 +7,8 @@
 
 ## Algorithm
 
- - [排序算法](Sort.md)
+ - [交换&插入排序](insert_swap_sort.md)
+ - [Dijkstra](dijkstra.md)
 
 ## Inside the C++ Object Model
 #### 
@@ -18,7 +19,6 @@
  - 线程池
  - 信号量
  - [计算机网络](network.md)
- - [Dijkstra](dijkstra.md)
  - [简单的算法题](simple_algorithm.md)
  - [和技术无关的面试问题](question.md)
 
