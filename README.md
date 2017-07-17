@@ -9,6 +9,7 @@
 
  - [冒泡&插入&Shell排序](insert_swap_sort.md)
  - [快速排序](quick_sort.md)
+ - [排序算法的选择](sort_analysis.md)
  - [Dijkstra](dijkstra.md)
 
 ## 数据结构
