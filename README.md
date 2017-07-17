@@ -7,7 +7,7 @@
 
 ## Algorithm
 
- - [交换&插入排序](insert_swap_sort.md)
+ - [冒泡&插入&Shell排序](insert_swap_sort.md)
  - [快速排序](quick_sort.md)
  - [Dijkstra](dijkstra.md)
 
