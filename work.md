@@ -2,10 +2,8 @@
 ## 牛客校招日历：[https://www.nowcoder.com/activity/campus2018](https://www.nowcoder.com/activity/campus2018)
 ## 内推
 - [x] **京东**
-- [x] **网易游戏（盘古）**：链接在微信
-- [ ] **网易游戏（互娱）**
-- [ ] **阿里巴巴（蚂蚁金服）**
-- [ ] **阿里巴巴**
+- [x] **网易游戏（雷火）**：链接在微信
+- [x] **阿里巴巴**
 - [ ] **华为**：7月30号截止
 - [x] **百度（复合搜索部）**：[huanghaitao02@baidu.com](huanghaitao02@baidu.com)，“复合搜索部\_C/C++研发工程师\_姓名\_学校\_专业”
 - [ ] **Face++**：
