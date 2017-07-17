@@ -11,6 +11,9 @@
  - [快速排序](quick_sort.md)
  - [Dijkstra](dijkstra.md)
 
+## 数据结构
+ - [《STL源码剖析》](STL/README.md)
+
 ## Inside the C++ Object Model
 #### 
  - [C++ Object Model](IOM/ObjectModel.md)
