@@ -6,13 +6,14 @@
  - [虚函数表](CPP/VirutalTable.md)
 
 ## 2. Algorithm
-
+#### 排序算法
  - [冒泡&插入&Shell排序](insert_swap_sort.md)
  - [快速排序](quick_sort.md)
  - [排序算法的选择](sort_analysis.md)
- - [Dijkstra](dijkstra.md)
- 
 #### 海量数据处理
+
+#### 其他
+ - [Dijkstra](dijkstra.md)
 
 ## 3. 数据结构
  - [《STL源码剖析》](STL/README.md)
