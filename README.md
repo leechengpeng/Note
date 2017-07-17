@@ -6,15 +6,10 @@
  - [虚函数表](CPP/VirutalTable.md)
 
 ## 2. Algorithm
-### 排序算法
  - [冒泡&插入&Shell排序](insert_swap_sort.md)
  - [快速排序](quick_sort.md)
  - [排序算法的选择](sort_analysis.md)
- 
-### 海量数据处理
-指基于海量数据的存储、处理或操作，通常因为数据量过大，导致无法**短时间内迅速处理**或者**无法一次性载入内存**。
-
-### 其他
+ - [海量数据处理](big_data.md)
  - [Dijkstra](dijkstra.md)
 
 ## 3. 数据结构
