@@ -11,7 +11,7 @@ std::stack<int, std::deque<int>> IStack; // 默认
 std::stack<int, std::list<int>>  IStack; // 以std::list<int>作为stack的低层容器
 ```
 
- - [heap ](heap.md)：不属于STL组件，用作**priority queue**的底层实现机制。heap是一棵完全二叉树，分为max-heap和min-heap，STL heap是max-heap。heap的push使用上溯操作插入新节点，pop使用下溯操作弹出根节点。heap sort不断使用pop操作即可完成。
+ - [heap ](heap.md)：一棵完全二叉树，直接使用vector表示树形关系，特点是父节点都大于其子节点（max-heap）。heap的push使用上溯操作（将新节点放于vector末尾，新节点与父节点比较，如果大于父节点就与其交换，直至不需要交换或者到达根节点）插入新节点，pop使用下溯操作（将堆顶与vector末尾元素交换，然后堆顶节点与其较大子节点交换，直至叶子节点）弹出根节点。heap sort不断使用pop操作即可完成。
  - **priority queue**：使用heap作为其底层实现机制，每次得到queue中优先级最高的原素，直接使用heap的pop即可。
  
 ### 关联式容器
