@@ -42,3 +42,6 @@ void setBit(char* vBitMap, size_t vIndex)
 ### 例3：2.5亿个整数去重：2-BitMap，使用2bit存放数据状态00表示无、01表示有、10表示重复
 
 ### 例4：给40亿无符号整数集，查询给定数据是否已经存在中
+
+## 3. Simhash算法
+
