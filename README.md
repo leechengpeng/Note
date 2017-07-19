@@ -8,7 +8,6 @@
 ## 2. Algorithm
  - [冒泡&插入&Shell排序](insert_swap_sort.md)
  - [快速排序](quick_sort.md)
- - 归并排序
  - [排序算法的选择](sort_analysis.md)
  - [Dijkstra](dijkstra.md)
  - [海量数据处理](big_data.md)
