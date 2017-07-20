@@ -28,3 +28,18 @@ public:
 std::cout << sizeof(CPoint3d) << std::endl; // VS2015：8
 ```
 带有虚函数的类的大小为8字节：**类自带的1byte字节对齐** + **指向虚函数表的指针（4 byte）**。
+
+### 3. 继承类
+```C++
+class CPoint4d : public CPoint3d
+{
+public:
+	virtual ~CPoint4d() {}
+
+	virtual unsigned length() const override {}
+	virtual unsigned size() const {}
+};
+
+std::cout << sizeof(CPoint4d) << std::endl; // VS2015：8
+```
+继承依然大小为8byte，原理同2（详情参见[虚函数表](VirutalTable.md)）。
