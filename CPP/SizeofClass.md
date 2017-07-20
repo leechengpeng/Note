@@ -43,3 +43,24 @@ public:
 std::cout << sizeof(CPoint4d) << std::endl; // VS2015：8
 ```
 继承依然大小为8byte，原理同2（详情参见[虚函数表](VirutalTable.md)）。
+
+### 4. 多重继承
+```
+class CDesription
+{
+public:
+	virtual void description() const {}
+};
+
+class CPoint4d : public CPoint3d, public CDesription
+{
+public:
+	virtual ~CPoint4d() {}
+
+	virtual unsigned length() const override {}
+	virtual unsigned size() const {}
+};
+
+std::cout << sizeof(CPoint4d) << std::endl; // VS2015：16
+```
+此时，类`CPoint4d`需要维护两张虚函数表，再按字节对齐，类的大小即为16byte。
