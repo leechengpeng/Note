@@ -5,7 +5,7 @@
  - [内存池](CPP/MemoryPool.md)
  - [虚函数表](CPP/VirutalTable.md)
  - [对象模型](CPP/ObjectModel.md)
- - [类的大小](CPP/SizeofClass.md)
+ - [类的大小（待完善）](CPP/SizeofClass.md)
  - [虚拟继承](CPP/VirtualExtends.md)
  - [构造函数设计](CPP/Constructor.md)
  - [一些问题](CPP/Common.md)
@@ -16,12 +16,13 @@
  - [排序算法的选择](sort_analysis.md)
  - [Dijkstra](dijkstra.md)
  - [海量数据处理](big_data.md)
+ - 动态规划
 
 ## 3. 数据结构
  - [《STL源码剖析》](STL/README.md)
 
 ## 4. 其它
- - [设计模式](design_patterns.md)
+ - [设计模式（待完善）](design_patterns.md)
  - [操作系统](OS.md)
  - [计算机网络](network.md)
  - [简单的算法题](simple_algorithm.md)
