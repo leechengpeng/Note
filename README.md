@@ -11,11 +11,11 @@
  - [一些问题](CPP/Common.md)
 
 ## 2. Algorithm
- - [冒泡&插入&Shell排序](insert_swap_sort.md)
- - [快速排序](quick_sort.md)
- - [排序算法的选择](sort_analysis.md)
- - [Dijkstra](dijkstra.md)
- - [海量数据处理](big_data.md)
+ - [冒泡&插入&Shell排序](Algorithm/insert_swap_sort.md)
+ - [快速排序](Algorithm/quick_sort.md)
+ - [排序算法的选择](Algorithm/sort_analysis.md)
+ - [Dijkstra](Algorithm/dijkstra.md)
+ - [海量数据处理](Algorithm/big_data.md)
  - 动态规划
 
 ## 3. 数据结构
@@ -23,11 +23,11 @@
  - B树
 
 ## 4. 其它
- - [设计模式（待完善）](design_patterns.md)
- - [操作系统](OS.md)
- - [计算机网络](network.md)
- - [简单的算法题](simple_algorithm.md)
- - [和技术无关的面试问题](question.md)
+ - [设计模式（待完善）](Common/design_patterns.md)
+ - [操作系统](Common/OS.md)
+ - [计算机网络](Common/network.md)
+ - [简单的算法题](Common/simple_algorithm.md)
+ - [和技术无关的面试问题](Common/question.md)
  - 线程池
  - Map-Reduce：一种计算机**计算模型**，通过map和reduce把任务分发到不同的计算机进行分布式计算。
 
