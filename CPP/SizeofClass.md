@@ -13,3 +13,5 @@ CPoint3d Point2;
 
 std::cout << "Point1: " << &Point1 << std::endl;  // VS2015: 0x0058f833
 std::cout << "Point2: " << &Point2 << std::endl;  // VS2015: 0x0058f827
+```
+
