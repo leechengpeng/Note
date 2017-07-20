@@ -21,6 +21,7 @@
  - [《STL源码剖析》](STL/README.md)
 
 ## 4. 其它
+ - [设计模式](design_patterns.md)
  - [操作系统](OS.md)
  - [计算机网络](network.md)
  - [简单的算法题](simple_algorithm.md)
