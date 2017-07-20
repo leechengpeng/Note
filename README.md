@@ -8,6 +8,7 @@
  - [类的大小](CPP/SizeofClass.md)
  - [虚拟继承](CPP/VirtualExtends.md)
  - [构造函数设计](CPP/Constructor.md)
+ - [一些问题](CPP/Common.md)
 
 ## 2. Algorithm
  - [冒泡&插入&Shell排序](insert_swap_sort.md)
