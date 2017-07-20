@@ -4,8 +4,8 @@
  - [使用对象管理资源](CPP/SmartPointer.md)
  - [内存池](CPP/MemoryPool.md)
  - [虚函数表](CPP/VirutalTable.md)
- - [C++对象模型](CPP/ObjectModel.md)
- - [C++类的大小](CPP/SizeofClass.md)
+ - [对象模型](CPP/ObjectModel.md)
+ - [类的大小](CPP/SizeofClass.md)
  - [构造函数设计](CPP/Constructor.md)
 
 ## 2. Algorithm
