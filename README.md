@@ -6,6 +6,7 @@
  - [虚函数表](CPP/VirutalTable.md)
  - [对象模型](CPP/ObjectModel.md)
  - [类的大小](CPP/SizeofClass.md)
+ - [虚拟继承](VirtualExtends.md)
  - [构造函数设计](CPP/Constructor.md)
 
 ## 2. Algorithm
