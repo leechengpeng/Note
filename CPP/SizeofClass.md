@@ -45,7 +45,7 @@ std::cout << sizeof(CPoint4d) << std::endl; // VS2015：8
 继承依然大小为8byte，原理同2（详情参见[虚函数表](VirutalTable.md)）。
 
 ### 4. 多重继承
-```
+```C++
 class CDesription
 {
 public:
