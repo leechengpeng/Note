@@ -15,3 +15,16 @@ std::cout << "Point1: " << &Point1 << std::endl;  // VS2015: 0x0058f833
 std::cout << "Point2: " << &Point2 << std::endl;  // VS2015: 0x0058f827
 ```
 
+### 2. 带有虚函数的类
+```C++
+class CPoint3d 
+{
+public:
+	virtual ~CPoint3d() {}
+  
+	virtual unsigned length() const {}
+};
+
+std::cout << sizeof(CPoint3d) << std::endl; // VS2015：8
+```
+带有虚函数的类的大小为8字节。因为，此时类存放了一个指向虚函数表的指针，
