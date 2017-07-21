@@ -24,7 +24,7 @@
 class Driver
 {
 public:
-  Driver(Car car);
+    Driver(Car car);
 };
 ```
 
