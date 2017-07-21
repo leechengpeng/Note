@@ -44,7 +44,7 @@ private:
 Singleton* Singleton::m_Instance = new Singleton();
 ```
 ### 懒汉式
-被动创建，线程不安全，需要加锁。
+被动创建，线程不安全，需要加锁（双重判空保证唯一性）。
 ```C++
 class Singleton
 {
