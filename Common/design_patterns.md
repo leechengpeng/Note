@@ -24,4 +24,41 @@
 ### 1.6 接口隔离原则
 
 ## 2. 单例模式
-单例模式定义：**确保类只有一个实例，而且自行实例化并向整个系统提供这个实例**。由于系统中仅有一个实例，因此单例模式能有效的减少内存和性能开销
+单例模式定义：**确保类只有一个实例，而且自行实例化并向整个系统提供这个实例**。由于系统中仅有一个实例，因此单例模式能有效的减少内存和性能开销。
+### 恶汉式
+主动创建实例，线程安全，不需要加锁。
+```C++
+class Singleton
+{
+public:
+	static Singleton* getInstance() { return m_Instance; }
+
+private:
+	Singleton() { }
+
+	static Singleton* m_Instance;
+};
+
+Singleton* Singleton::m_Instance = new Singleton();
+```
+### 懒汉式
+被动创建，线程不安全，需要加锁。
+```C++
+class Singleton
+{
+public:
+	static Singleton* getInstance() 
+	{ 
+		if (m_Instance == NULL) { m_Instance = new Singleton(); }
+
+		return m_Instance; 
+	}
+
+private:
+	Singleton() { }
+
+	static Singleton* m_Instance;
+};
+
+Singleton* Singleton::m_Instance = NULL;
+```
