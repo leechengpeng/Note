@@ -32,10 +32,9 @@ class Singleton
 {
 public:
 	static Singleton* getInstance() { return m_Instance; }
-
+protected:
+	Singleton() {}
 private:
-	Singleton() { }
-
 	static Singleton* m_Instance;
 };
 
@@ -50,13 +49,11 @@ public:
 	static Singleton* getInstance() 
 	{ 
 		if (m_Instance == NULL) { m_Instance = new Singleton(); }
-
 		return m_Instance; 
 	}
-
+protected:
+	Singleton() {}
 private:
-	Singleton() { }
-
 	static Singleton* m_Instance;
 };
 
