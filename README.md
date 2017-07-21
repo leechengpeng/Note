@@ -20,7 +20,7 @@
 
 ## 3. 数据结构
  - [《STL源码剖析》](STL/README.md)
- - B树
+ - [B树](b_tree.md)
 
 ## 4. 其它
  - [设计模式（待完善）](Common/design_patterns.md)
