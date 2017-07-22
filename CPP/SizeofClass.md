@@ -71,4 +71,4 @@ class Liger : public Tiger, public Lion {};
 
 std::cout << sizeof(Liger) << std::endl; // VS2012: 8
 ```
-类`Liger`里面存放了类`Tiger`和`Lion`两个类的实例，因次大小为8。
+类`Liger`里面存放了类`Tiger`和`Lion`两个类的实例，因此大小为8 byte。
