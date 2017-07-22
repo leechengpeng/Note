@@ -1,19 +1,11 @@
 ## C++类的大小
 ### 1. 空类的大小
-定义一个空的类`CPoint3d`：
+定义一个空的类`Animal`：
 ```C++
-class CPoint3d {};
-
-std::cout << sizeof(CPoint3d) << std::endl;  // VS2015: 1
+class Animal {};
+std::cout << sizeof(Animal) << std::endl; // VS2012: 1
 ```
-空类`CPoint3d`中虽然没有定义任何数据，但编译器会强制的给类`CPoint3d`插入一个**char**（1 byte）型的数据。这种策略使得类`CPoint3d`的对象在内存中都有自己独立的地址。
-```C++
-CPoint3d Point1;
-CPoint3d Point2;
-
-std::cout << "Point1: " << &Point1 << std::endl;  // VS2015: 0x0058f833
-std::cout << "Point2: " << &Point2 << std::endl;  // VS2015: 0x0058f827
-```
+空类`Animal`隐藏1byte大小的空间，因为编译器强制的给类`Animal`插入了一个**char**型数据，使类`Animal`的每个对象在内存中都有自己唯一的地址。
 
 ### 2. 带有虚函数的类
 ```C++
@@ -72,10 +64,11 @@ class Tiger : public virtual Animal { };
 class Lion  : public virtual Animal { };
 ```
 ```C++
-std::cout << sizeof(Animal) << std::endl;
-std::cout << sizeof(Tiger) << std::endl;
-std::cout << sizeof(Lion) << std::endl;
+std::cout << sizeof(Animal) << std::endl; // VS2012: 1
+std::cout << sizeof(Tiger) << std::endl;  // VS2012: 4
+std::cout << sizeof(Lion) << std::endl;   // VS2012: 4
 ```
-> VS2012：1 4 4
 子类会被赋予一个指向**虚基类**的指针（最新的编译器设计会把空类本身的一个字节大小抹去，由该指针表示类本身），该继承体系内存结构如下：
 ![]()
+
+
