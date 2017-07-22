@@ -9,17 +9,17 @@ std::cout << sizeof(Animal) << std::endl; // VS2012: 1
 
 ### 2. 带有虚函数的类
 ```C++
-class CPoint3d 
+class Animal 
 {
 public:
-	virtual ~CPoint3d() {}
-  
-	virtual unsigned length() const {}
+	virtual ~Animal();
+
+	virtual unsigned wightV();
 };
 
-std::cout << sizeof(CPoint3d) << std::endl; // VS2015：8
+std::cout << sizeof(Animal) << std::endl;; // VS2012：4
 ```
-带有虚函数的类的大小为8字节：**类自带的1byte字节对齐** + **指向虚函数表的指针（4 byte）**。
+因为**虚函数**的存在，因此类本身存放了一个指向**虚函数表**的指针。新的编译器做了特殊优化，去掉了编译器安插的那个char，避免了因字节对齐而使类的大小增加。
 
 ### 3. 继承类
 ```C++
