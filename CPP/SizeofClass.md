@@ -66,3 +66,16 @@ std::cout << sizeof(CPoint4d) << std::endl; // VS2015：16
 此时，类`CPoint4d`需要维护两张虚函数表，再按字节对齐，类的大小即为16byte。
 
 ### 5. [虚继承](VirtualExtends.md)
+```C++
+class Animal { };
+class Tiger : public virtual Animal { };
+class Lion  : public virtual Animal { };
+```
+```C++
+std::cout << sizeof(Animal) << std::endl;
+std::cout << sizeof(Tiger) << std::endl;
+std::cout << sizeof(Lion) << std::endl;
+```
+> VS2012：1 4 4
+子类会被赋予一个指向**虚基类**的指针（最新的编译器设计会把空类本身的一个字节大小抹去，由该指针表示类本身），该继承体系内存结构如下：
+![]()
