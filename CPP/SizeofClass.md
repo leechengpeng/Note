@@ -19,11 +19,11 @@ public:
 
 std::cout << sizeof(Animal) << std::endl;; // VS2012：4
 ```
-因为**虚函数**的存在，因此类本身存放了一个指向**虚函数表**的指针。新的编译器做了特殊优化，去掉了编译器安插的那个char，避免了因字节对齐而使类的大小增加。
+因为**虚函数**的存在，因此类本身存放了一个指向**虚函数表**的指针。**新的编译器做了特殊优化，将类本身的成员变量（此处为指向虚函数表的指针）作为类唯一的地址，去掉了编译器安插的那个char，避免了因字节对齐而使类的大小增加。**
 
 ### 3. 继承类
 ```C++
-class Tiger : Animal 
+class Tiger : public Animal 
 {
 public:
 	virtual unsigned wightV() override {}
@@ -36,24 +36,22 @@ std::cout << sizeof(Tiger) << std::endl;; // VS2012：4
 
 ### 4. 多重继承
 ```C++
-class CDesription
+class Desription
 {
 public:
 	virtual void description() const {}
 };
 
-class CPoint4d : public CPoint3d, public CDesription
+class Tiger : public Animal, public Desription
 {
 public:
-	virtual ~CPoint4d() {}
-
-	virtual unsigned length() const override {}
-	virtual unsigned size() const {}
+	virtual unsigned wightV() override {}
+	virtual unsigned typeV() {}
 };
 
-std::cout << sizeof(CPoint4d) << std::endl; // VS2015：16
+std::cout << sizeof(Tiger) << std::endl;; // VS2012：8
 ```
-此时，类`CPoint4d`需要维护两张虚函数表，再按字节对齐，类的大小即为16byte。
+此时，类`Tiger`需要维护两张虚函数表，类的大小即为8byte。
 
 ### 5. [虚继承](VirtualExtends.md)
 ```C++
