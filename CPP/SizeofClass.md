@@ -70,5 +70,9 @@ std::cout << sizeof(Lion) << std::endl;   // VS2012: 4
 ```
 子类会被赋予一个指向**虚基类**的指针（最新的编译器设计会把空类本身的一个字节大小抹去，由该指针表示类本身），该继承体系内存结构如下：
 ![]()
+```C++
+class Liger : public Tiger, public Lion {};
 
-
+std::cout << sizeof(Liger) << std::endl; // VS2012: 8
+```
+类`Liger`里面存放了类`Tiger`和`Lion`两个类的实例，因次大小为8。
