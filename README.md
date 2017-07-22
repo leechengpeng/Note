@@ -5,8 +5,8 @@
  - [内存池](CPP/MemoryPool.md)
  - [虚函数表](CPP/VirutalTable.md)
  - [对象模型](CPP/ObjectModel.md)
- - [类的大小（待完善）](CPP/SizeofClass.md)
- - [虚拟继承](CPP/VirtualExtends.md)
+ - [类的大小](CPP/SizeofClass.md)
+ - [虚继承](CPP/VirtualExtends.md)
  - [构造函数设计](CPP/Constructor.md)
  - [一些问题](CPP/Common.md)
 
