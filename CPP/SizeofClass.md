@@ -64,3 +64,5 @@ public:
 std::cout << sizeof(CPoint4d) << std::endl; // VS2015：16
 ```
 此时，类`CPoint4d`需要维护两张虚函数表，再按字节对齐，类的大小即为16byte。
+
+### 5. [虚继承](VirtualExtends.md)
