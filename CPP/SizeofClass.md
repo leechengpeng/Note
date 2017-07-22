@@ -23,18 +23,16 @@ std::cout << sizeof(Animal) << std::endl;; // VS2012：4
 
 ### 3. 继承类
 ```C++
-class CPoint4d : public CPoint3d
+class Tiger : Animal 
 {
 public:
-	virtual ~CPoint4d() {}
-
-	virtual unsigned length() const override {}
-	virtual unsigned size() const {}
+	virtual unsigned wightV() override {}
+	virtual unsigned typeV() {}
 };
 
-std::cout << sizeof(CPoint4d) << std::endl; // VS2015：8
+std::cout << sizeof(Tiger) << std::endl;; // VS2012：4
 ```
-继承依然大小为8byte，原理同2（详情参见[虚函数表](VirutalTable.md)）。
+继承类大小依然为4byte，原理同2，详情参见[虚函数表](VirutalTable.md)。
 
 ### 4. 多重继承
 ```C++
