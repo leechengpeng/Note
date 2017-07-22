@@ -68,8 +68,7 @@ std::cout << sizeof(Animal) << std::endl; // VS2012: 1
 std::cout << sizeof(Tiger) << std::endl;  // VS2012: 4
 std::cout << sizeof(Lion) << std::endl;   // VS2012: 4
 ```
-子类会被赋予一个指向**虚基类**的指针（最新的编译器设计会把空类本身的一个字节大小抹去，由该指针表示类本身），该继承体系内存结构如下：
-![]()
+子类会被赋予一个指向**虚基类**的指针（最新的编译器设计会把空类本身的一个字节大小抹去，由该指针表示类本身）。
 ```C++
 class Liger : public Tiger, public Lion {};
 
