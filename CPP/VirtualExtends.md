@@ -4,12 +4,11 @@
 class Animal
 {
 public:
-	
 	int getWeight() const { return 0; }
 };
 
 class Tiger : public Animal {};
-class Lion : public Animal {};
+class Lion  : public Animal {};
 class Liger : public Tiger, public Lion {};
 
 int main()
@@ -31,7 +30,7 @@ public:
 };
 
 class Tiger : public virtual Animal {};
-class Lion : public virtual Animal {};
+class Lion  : public virtual Animal {};
 class Liger : public Tiger, public Lion {};
 
 int main()
@@ -50,7 +49,7 @@ public:
 };
 
 class Tiger : public Animal {};
-class Lion : public Animal {};
+class Lion  : public Animal {};
 class Liger : public Tiger, public Lion {};
 
 int main()
