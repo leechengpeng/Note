@@ -64,7 +64,7 @@ void nvwa()
 
 	if (pHuman)
 	{
-		std::cout << "The human color is: " << pHuman->color() << std::endl;
+		std::cout << "The human features is: " << pHuman->color() << std::endl;
 	}
 }
 ```
@@ -91,4 +91,94 @@ void nvwa()
 **工厂方法模式**将**变化因素**转移到客户端（女娲），在一定程度上解决**简单工厂**的**开闭问题**。
 
 ## 3. 抽象工厂模式
+之前的女娲造人只创建了人类的颜色，人类的性别却别有区分。我们将性别加入变化当中，这个时候需要创建产品的影响因素其实是二维的。可以通过**抽象工厂模式**创建两个不同的具体工厂来满足创建需求。
 
+抽象产品（人类），添加了一个性别项：
+```C++
+class Human
+{
+public:
+	virtual std::string color() = 0;
+	virtual std::string gender() = 0;
+};
+
+class BlackMan : public Human 
+{
+public:
+	virtual std::string color() override { return "Black"; }
+};
+
+class YellowMan : public Human
+{
+public:
+	virtual std::string color() override { return "Yellow"; }
+};
+```
+具体产品：
+```C++
+class FemaleBlackMan : public BlackMan
+{
+public:
+	virtual std::string gender() override { return "Female"; }
+};
+
+class MaleBlackMan : public BlackMan
+{
+public:
+	virtual std::string gender() override { return "Male"; }
+};
+
+class FemaleYellowMan : public YellowMan
+{
+public:
+	virtual std::string gender() override { return "Female"; }
+};
+
+class MaleYellowMan : public YellowMan
+{
+public:
+	virtual std::string gender() override { return "Male"; }
+};
+```
+工厂：
+```C++
+class FemaleHumanFactory : public HumanFactory
+{
+public:
+	virtual Human* createHuman(const std::string& vHumanType) override
+	{
+		Human* pHuman = nullptr;
+
+		if (vHumanType == "BlackMan")
+		{
+			pHuman = new FemaleBlackMan();
+		}
+		else if (vHumanType == "YellowMan")
+		{
+			pHuman = new FemaleYellowMan();
+		}
+		else
+		{
+			std::cerr << "Creating error, unknown huaman type '" << vHumanType << "'" << std::endl;
+		}
+
+		return pHuman;
+	}
+};
+// 篇幅有限，不在赘述创建男性的工厂
+```
+客户端：
+```C++
+void nvwa()
+{
+	HumanFactory* pHumanFactory = new FemaleHumanFactory();
+
+	std::string HumanType = "YellowMan";
+	Human* pHuman = pHumanFactory->createHuman(HumanType);
+
+	if (pHuman)
+	{
+		std::cout << "The human features is: " << pHuman->color() << "&" << pHuman->gender() << std::endl;
+	}
+}
+```
