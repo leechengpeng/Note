@@ -79,16 +79,16 @@ class BlackManFactory : public AbstrctHumanFactory
 ...
 void nvwa()
 {
-	// 使用黑种人的工厂
+	// 黑种人的工厂
 	Human* pBlackHuman  = BlackManFactory::createHuman();
-	// 使用黄种人的工厂
+	// 黄种人的工厂
 	Human* pYellowHuman = YellowManFactory::createHuman();
 	
 	// 添加新的人种，只需在客户端添加如下代码即可：
 	Human* pWhiteHuman  = WhiteManFactory::createHuman();
 }
 ```
-**工厂方法模式**在一定程度上解决**简单工厂**的**开闭问题**。
+**工厂方法模式**将**变化因素**转移到客户端，在一定程度上解决**简单工厂**的**开闭问题**。
 
 ## 3. 抽象工厂模式
 
