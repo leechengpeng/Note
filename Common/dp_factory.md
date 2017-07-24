@@ -58,7 +58,7 @@ public:
 ```C++
 void nvwa()
 {
-	std::string HumanType = "RedMan";
+	std::string HumanType = "YellowMan";
 	Human* pHuman = HumanFactory::createHuman(HumanType);
 
 	if (pHuman)
