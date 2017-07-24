@@ -23,7 +23,7 @@
  - [B树](b_tree.md)
 
 ## 4. 其它
- - [设计模式（待完善）](Common/design_patterns.md)
+ - [设计模式](Common/design_patterns.md)
  - [操作系统](Common/OS.md)
  - [计算机网络](Common/network.md)
  - [简单的算法题](Common/simple_algorithm.md)
