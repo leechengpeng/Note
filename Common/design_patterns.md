@@ -69,3 +69,4 @@ public:
 
 ## 23种设计模式
 * [单例模式](dp_singleton.md)
+* [工厂模式](dp_factory.md)
