@@ -14,7 +14,7 @@ public:
 	virtual std::string color() = 0;
 };
 ```
-具体产品：
+具体产品（人）：
 ```C++
 class BlackMan : public Human 
 {
@@ -28,7 +28,7 @@ public:
 	virtual std::string color() override { return "Yellow"; }
 };
 ```
-工厂：
+工厂（八卦炉）：
 ```C++
 class HumanFactory
 {
@@ -53,4 +53,17 @@ public:
 		return pHuman;
 	}
 };
+```
+生产具体产品（女娲）：
+```C++
+void nvwa()
+{
+	std::string HumanType = "RedMan";
+	Human* pHuman = HumanFactory::createHuman(HumanType);
+
+	if (pHuman)
+	{
+		std::cout << "The human color is: " << pHuman->color() << std::endl;
+	}
+}
 ```
