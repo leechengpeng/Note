@@ -28,7 +28,6 @@
  - [计算机网络](Common/network.md)
  - [简单的算法题](Common/simple_algorithm.md)
  - [和技术无关的面试问题](Common/question.md)
- - 线程池
  - Map-Reduce：一种计算机**计算模型**，通过map和reduce把任务分发到不同的计算机进行分布式计算。
 
 ## [计划 & 内推](work.md)
