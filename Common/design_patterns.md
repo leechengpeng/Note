@@ -71,7 +71,7 @@ public:
 * [单例模式](dp_singleton.md)
 * [工厂模式](dp_factory.md)
 
-* [责任链模式]
+* [责任链模式](dp_chain.md)
 * [策略模式]
 
 * [观察者模式]
