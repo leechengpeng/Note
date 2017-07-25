@@ -14,11 +14,11 @@ void askForLeave(unsigned vDays)
 	}
 	else if (vDays <= 5)
 	{
-		std::cout << "项目主管批准请假..." << std::endl;
+		std::cout << "项目经理批准请假..." << std::endl;
 	}
 	else if (vDays <= 7)
 	{
-		std::cout << "部门主管批准请假..." << std::endl;
+		std::cout << "部门经理批准请假..." << std::endl;
 	}
 	else
 	{
