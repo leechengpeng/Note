@@ -45,6 +45,7 @@ public:
 	}
 };
 
+// 装饰类：Sugar
 class Sugar : public Coffe
 {
 public:
@@ -62,6 +63,7 @@ private:
 	Coffe* m_Coffe;
 };
 
+// 装饰类：Milk
 class Milk : public Coffe
 {
 public:
