@@ -9,7 +9,8 @@
 - [ ] **华为**：7月30号截止
 - [x] **百度（复合搜索部）**：[huanghaitao02@baidu.com](huanghaitao02@baidu.com)，“复合搜索部\_C/C++研发工程师\_姓名\_学校\_专业”
 - [ ] **Face++**：
-- [x] **搜狐**：[xiaohuzhaopin@sohu-inc.com](xiaohuzhaopin@sohu-inc.com)，“姓名\_学校\_算法研发工程师”
+- [x] **搜狐（提前批）**：[xiaohuzhaopin@sohu-inc.com](xiaohuzhaopin@sohu-inc.com)，“姓名\_学校\_算法研发工程师”
+- [ ] **搜狐**：[westyuan@sohu-inc.com](westyuan@sohu-inc.com)，“C++工程师\_学校\_学历\_姓名”
 - [x] **拼多多**：[pddcampus@pinduoduo.com](pddcampus@pinduoduo.com)，“服务端研发工程师-学校-专业-姓名”
 
 - [ ] **百度**
