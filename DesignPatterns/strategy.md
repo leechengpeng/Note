@@ -120,6 +120,7 @@ template <typename T>
 void sort(T* voArray, unsigned vArraySize, const std::string& vSortType)
 {
 	// 此处可使用工厂模式，根据不同的vSortType创建出不同的排序算法类
+	// 类似于'SortAlgorithm<T>* pSA = Factory.create(vSortType);'
 	SortAlgorithm<T>* pSA = new BubbleSort<T>();
 
 	SortAlgorithmHandler<T> pSAH;
@@ -127,4 +128,4 @@ void sort(T* voArray, unsigned vArraySize, const std::string& vSortType)
 	pSAH.sort(voArray, vArraySize);
 }
 ```
-注意客户端还是需要通过不同的**vSortType**创建不同排序算法/策略实例，这个时候[工厂模式](factory.md)就发挥其作用。
+注意客户端还是需要通过不同的**vSortType**创建不同排序算法/策略实例，这个时候[工厂模式](factory.md)就发挥其作用。当添加新的排序算法时，不需要改变**sort**函数的任何代码即可完成扩展。
