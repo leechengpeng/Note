@@ -72,7 +72,7 @@ public:
 * [工厂模式](factory.md)
 
 * [责任链模式](chain.md)
-* [策略模式]
+* [策略模式](strategy.md)
 
 * [观察者模式]
 * [迭代器模式]
