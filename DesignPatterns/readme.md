@@ -68,6 +68,8 @@ public:
 5. 类在调用其它类所提供的接口（方法）时，应尽量避免太过了解其它类的细节（迪米特法则）
 
 ## 23种设计模式
-| 创建类设计模式 | 行为类设计模式 | 结构类设计模式 |
-| --- | --- | --- |
-| [单例模式](singleton.md)、[工厂模式](factory.md) | [责任链模式](chain.md)、[策略模式](strategy.md)、[模板方法模式](template.md) | [装饰模式](decorator.md) |
+| 设计模式类型 | 设计模式 |
+| --- | --- |
+| 创建类 | [单例模式](singleton.md)、[工厂模式](factory.md) |
+| 行为类 | [责任链模式](chain.md)、[策略模式](strategy.md)、[模板方法模式](template.md) |
+| 结构类 | [装饰模式](decorator.md) |
