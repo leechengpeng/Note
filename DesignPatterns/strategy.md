@@ -90,10 +90,8 @@ public:
 	}
 };
 ```
-设计类``选择不同的排序算法/策略：
+设计类`SortAlgorithmHandler`选择不同的排序算法/策略：
 ```C++
-
-
 template <typename T>
 class SortAlgorithmHandler
 {
@@ -129,3 +127,4 @@ void sort(T* voArray, unsigned vArraySize, const std::string& vSortType)
 	pSAH.sort(voArray, vArraySize);
 }
 ```
+注意客户端还是需要通过不同的**vSortType**创建不同排序算法/策略实例，这个时候[工厂模式](factory.md)就发挥其作用。
