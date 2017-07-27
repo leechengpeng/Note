@@ -11,5 +11,6 @@
 * 如果叶子节点此时包含元素数小于3，则直接插入到该叶子节点中，结束插入操作
 * 如果叶子节点此时已经包含了3个元素，则将该叶子节点分裂成两个新的节点
 
+![2-3树插入操作](https://github.com/leechengpeng/Note/blob/master/Resources/Images/2_3_tree.gif)
 
 ## 2-4树
