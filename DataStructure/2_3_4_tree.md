@@ -7,10 +7,11 @@
 * 所有**叶子节点**都拥有**相同的深度**
 
 ### 2-3树插入操作
-* 定位元素X应被插入的叶子节点位置
+* 定位**元素X**应被插入的**叶子节点位置**
 * 如果叶子节点此时包含元素数小于3，则直接插入到该叶子节点中，结束插入操作
 * 如果叶子节点此时已经包含了3个元素，则将该叶子节点分裂成两个新的节点
 
-![2-3树插入操作](https://github.com/leechengpeng/Note/blob/master/Resources/Images/2_3_tree.gif)
+![2-3树插入操作](https://github.com/leechengpeng/Note/blob/master/Resources/Images/2_3_tree1.gif)
+![2-3树插入操作](https://github.com/leechengpeng/Note/blob/master/Resources/Images/2_3_tree2.gif)
 
 ## 2-4树
