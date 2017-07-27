@@ -21,7 +21,6 @@
 
 ## 3. 数据结构
  - [《STL源码剖析》](DataStructure/STL/README.md)
- - [平衡查找树](DataStructure/2_3_4_tree.md)
  - [B树](DataStructure/b_tree.md)
 
 ## 4. 其它
