@@ -47,5 +47,4 @@ void sort(T* voArray, unsigned vArraySize, const std::string& vSortType)
 		std::cerr << "Sort type error: " << vSortType << std::endl;
 	}
 }
-
 ```
