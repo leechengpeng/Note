@@ -29,7 +29,8 @@ public:
     // 门面1
     static void Method1()
     {
-        m_Step1.doStep1();
+        // 提供统一接口Method1，内部细节被掩盖，提高设计的灵活性（动态更换实现细节）
+        m_Step1.doStep1();
         m_Step2.doStep2();
         m_Step3.doStep3();
     }
@@ -37,7 +38,7 @@ public:
     // 门面2
     static void Method2()
     {
-        m_Step3.doStep3();
+        m_Step3.doStep3();
         m_Step1.doStep1();
     }
     
