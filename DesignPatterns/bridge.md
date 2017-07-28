@@ -37,12 +37,12 @@ public:
 class ConcreteChangeFactor2A
 {
 public:
-    virtual void doSomething() = 0;
+    virtual void doSomething() override;
 };
 class ConcreteChangeFactor2B
 {
 public:
-    virtual void doSomething() = 0;
+    virtual void doSomething() override;
 };
 
 class ConcreteClass
