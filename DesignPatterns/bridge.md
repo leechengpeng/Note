@@ -6,9 +6,64 @@
 * **良好的扩展性**：某些类可能有多个变化维度（因素），每个变化因素都可以通过“桥梁”把变化因素（实现）和类连接（抽象），扩展的时候只需要继承实现变化因素的功能即可。
 
 ```C++
-class ChangeFactor
+// 第一维变化因素
+class ChangeFactor1
 {
 public:
-
+    virtual void doSomething() = 0;
 };
+
+// 第一维具体变化因素
+class ConcreteChangeFactor1A
+{
+public:
+    virtual void doSomething() override;
+};
+class ConcreteChangeFactor1B
+{
+public:
+    virtual void doSomething() override;
+};
+
+// 第二维变化因素
+class ChangeFactor2
+{
+public:
+    virtual void doSomething() = 0;
+};
+
+// 第二维具体变化因素
+class ConcreteChangeFactor2A
+{
+public:
+    virtual void doSomething() = 0;
+};
+class ConcreteChangeFactor2B
+{
+public:
+    virtual void doSomething() = 0;
+};
+
+class ConcreteClass
+{
+public:
+    // 通过构造函数，可以提醒调用在明确（必须）将抽象（成员变量）与细节（具体变化因素）建立“桥梁连接”
+    ConcreteClass(ChangeFactor1* vChangeFactor1, ChangeFactor2* vChangeFactor2) : m_ChangeFactor1(vChangeFactor1), m_ChangeFactor2(vChangeFactor2)
+    {
+    
+    }
+    
+    void doSomething()
+    {
+        // 具体业务
+        m_ChangeFactor1->doSomething();
+        m_ChangeFactor2->doSomething();
+    }
+    
+private:
+    // 桥梁
+    ChangeFactor1* m_ChangeFactor1;
+    ChangeFactor2* m_ChangeFactor2;
+};
+
 ```
