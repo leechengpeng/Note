@@ -8,13 +8,13 @@ void bucketSort(T* voArray, size_t vArraySize, size_t vMaxNum)
 {
 	_ASSERT(voArray);
   
-  // Step1：申请一个能保存范围在[0, vMaxNum)数列的数组X，用空间换时间
+	// 申请一个能保存范围在[0, vMaxNum)数列的数组，用空间换时间
 	int* Array = new int[vMaxNum]();
 
 	for (size_t i = 0; i < vArraySize; ++i)
 	{
 		_ASSERT(voArray[i] < vMaxNum);
-    // 数组Array的xiao'bi
+		// 桶排序的精髓：数组Array的下标对应voArray中的某个数
 		++Array[voArray[i]];
 	}
 
@@ -27,5 +27,23 @@ void bucketSort(T* voArray, size_t vArraySize, size_t vMaxNum)
 	}
 
 	delete[] Array;
+}
+```
+```C++
+int main()
+{
+	const int ArraySize = 10;
+	const int MaxNum    = 100;
+
+	int Array[ArraySize] = {99, 5, 75, 1, 55, 66, 65, 88, 14, 66};
+	bucketSort(Array, ArraySize, MaxNum);
+
+	for (size_t i = 0; i < ArraySize; ++i)
+	{
+		std::cout << Array[i] << " ";
+	}
+	std::cout << std::endl;
+
+	return 0;
 }
 ```
