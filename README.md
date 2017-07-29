@@ -11,6 +11,7 @@
  - [一些问题](CPP/Common.md)
 
 ## 2. Algorithm
+ - [桶排序](bucket_sort.md)
  - [插入排序：直接插入 + Shell](Algorithm/insert_sort.md)
  - [交换排序：冒泡 + 快速排序](Algorithm/exchange_sort.md)
  - [排序算法的选择](Algorithm/sort_analysis.md)
