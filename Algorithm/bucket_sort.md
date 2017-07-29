@@ -1,7 +1,6 @@
 # 桶排序
 **桶排序**是最快最简单的排序，典型的以**空间换时间**的算法。
-
-**例子**：输入一个**非负**数列**范围**在\[0, 1000)，对该数列排序
+> 输入一个**非负**数列**范围**在\[0, 1000)，对该数列排序
 ```C++
 template <typename T>
 void bucketSort(T* voArray, size_t vArraySize, size_t vMaxNum)
