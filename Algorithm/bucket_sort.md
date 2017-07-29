@@ -7,7 +7,7 @@ void bucketSort(T* voArray, size_t vArraySize, size_t vMaxNum)
 {
 	_ASSERT(voArray);
 	// 申请一个能容下voArray数列中任意数字的桶。
-	// “容下”：桶的大小至少大于数列中最大的数
+	// 容下表示桶的大小至少大于数列中最大的数
 	int* Bucket = new int[vMaxNum]();
 
 	for (size_t i = 0; i < vArraySize; ++i)
