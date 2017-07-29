@@ -6,18 +6,21 @@ template <typename T>
 void bucketSort(T* voArray, size_t vArraySize, size_t vMaxNum)
 {
 	_ASSERT(voArray);
-	// 申请一个能容下数列（voArray）中任意数字的桶。
-	// 其中，容下的意思是桶的大小至少大于数列中最大的数
+	// 申请一个能容下voArray数列中任意数字的桶。
+	// “容下”：桶的大小至少大于数列中最大的数
 	int* Bucket = new int[vMaxNum]();
 
 	for (size_t i = 0; i < vArraySize; ++i)
 	{
 		_ASSERT(voArray[i] < vMaxNum);
+		// 将voArray数列中的数放入对应的桶中
 		++Bucket[voArray[i]];
 	}
 
+	// 取出桶中对应的数，重新放入数列voArray中
 	for (size_t i = 0, Index = 0; i < vMaxNum; ++i)
 	{
+		// 取出某个桶中所有的数
 		for (size_t k = 0; k < Bucket[i]; ++k)
 		{
 			voArray[Index++] = i;
