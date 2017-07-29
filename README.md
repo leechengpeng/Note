@@ -12,8 +12,8 @@
 
 ## 2. Algorithm
  - [桶排序](Algorithm/bucket_sort.md)
- - [插入排序：直接插入 + Shell](Algorithm/insert_sort.md)
- - [交换排序：冒泡 + 快速排序](Algorithm/exchange_sort.md)
+ - [插入排序：直接插入 & Shell](Algorithm/insert_sort.md)
+ - [交换排序：冒泡 & 快速排序](Algorithm/exchange_sort.md)
  - [排序算法的选择](Algorithm/sort_analysis.md)
  - [广度优先遍历 & 深度优先遍历](Algorithm/bfs_dfs.md)
  - [Dijkstra](Algorithm/dijkstra.md)
