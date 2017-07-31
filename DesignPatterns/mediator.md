@@ -122,3 +122,7 @@ int main()
 > Lucy（房东）收到租客信息：我想租一套房...
 
 > Tom（租客）收到房东信息：可以，我的房屋面积100平米，一个月4000元...
+
+这里有两个关键问题：
+1. 类`HouseMediator`实际是通过桥梁模式建立`Tenant`和`Landlord`联系
+2. 因为该情景下，`Tenant`和`Landlord`必须通过中介`HouseMediator`才能连续，于是乎`Tenant`和`Landlord`通过构造函数强制设置中介，而`HouseMediator`通过set方法建立联系
