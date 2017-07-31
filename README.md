@@ -16,7 +16,7 @@
  - [交换排序：冒泡 & 快速排序](Algorithm/exchange_sort.md)
  - [排序算法的选择](Algorithm/sort_analysis.md)
  - [广度优先遍历 & 深度优先遍历](Algorithm/bfs_dfs.md)
- - [Dijkstra](Algorithm/dijkstra.md)
+ - [Dijkstra单源最短路径算法](Algorithm/dijkstra.md)
  - [海量数据处理](Algorithm/big_data.md)
  - 动态规划
 
