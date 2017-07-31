@@ -32,6 +32,7 @@ private:
 class LianJia : public HouseMediator
 {
 public:
+	// 中介联系租客和房东
 	void contact(const std::string& vMessage, const std::string& vRole) const override
 	{
 		if (vRole == "Landlord")
@@ -49,4 +50,75 @@ public:
 	}
 };
 ```
+租客和房东通过房屋中介互相联系：
+```C++
+// 房东
+class Landlord
+{
+public:
+	// 房东通过中介与租客联系
+	Landlord(const std::string& vName, HouseMediator* vMediator) : m_Mediator(vMediator), m_Name(vName) 
+	{
+		_ASSERT(m_Mediator);
+		m_Mediator->setLandlord(this);
+	}
 
+	void contact(const std::string& vMessage) const
+	{
+		m_Mediator->contact(vMessage, "Landlord");
+	}
+
+	void getMessage(const std::string& vMessage) const
+	{
+		std::cout << m_Name << "（房东）收到租客信息：" << vMessage << std::endl;
+	}
+
+private:
+	HouseMediator* m_Mediator;
+	std::string    m_Name;
+};
+
+// 租客
+class Tenant
+{
+public:
+	// 租客通过中介与房东联系
+	Tenant(const std::string& vName, HouseMediator* vMediator) : m_Mediator(vMediator), m_Name(vName)
+	{
+		_ASSERT(m_Mediator);
+		m_Mediator->setTenant(this);
+	}
+
+	void contact(const std::string& vMessage) const
+	{
+		m_Mediator->contact(vMessage, "Tenant");
+	}
+
+	void getMessage(const std::string& vMessage) const
+	{
+		std::cout << m_Name << "（租客）收到房东信息：" << vMessage << std::endl;
+	}
+
+private:
+	HouseMediator* m_Mediator;
+	std::string    m_Name;
+};
+```
+应用：
+```C++
+int main()
+{
+	HouseMediator* pMediator = new LianJia();
+
+	Tenant   Tom("Tom", pMediator);
+	Landlord Lucy("Lucy", pMediator);
+
+	Tom.contact("我想租一套房...");
+	Lucy.contact("可以，我的房屋面积100平米，一个月4000元...");
+
+	return 0;
+}
+```
+> Lucy（房东）收到租客信息：我想租一套房...
+
+> Tom（租客）收到房东信息：可以，我的房屋面积100平米，一个月4000元...
