@@ -71,5 +71,5 @@ public:
 | 模式类型 | 设计模式 |
 | :--------: | --- |
 | **创建** | [单例模式](singleton.md)、[工厂模式](factory.md)、[建造者模式]、[原型模式] |
-| **行为** | [责任链模式](chain.md)、[策略模式](strategy.md)、[模板方法模式](template.md)、[命令模式]、[解释器模式]、[观察者模式]、[访问者模式]、[中介者模式](mediator.md)、[访问者模式]、[迭代器模式](iterator.md) |
+| **行为** | [责任链模式](chain.md)、[策略模式](strategy.md)、[模板方法模式](template.md)、[命令模式]、[解释器模式]、[观察者模式](observer.md)、[访问者模式]、[中介者模式](mediator.md)、[访问者模式]、[迭代器模式](iterator.md) |
 | **结构** | [装饰模式](decorator.md)、[适配器模式]、[组合模式]、[代理模式]、[桥梁模式](bridge.md)、[门面模式](facade.md) |
