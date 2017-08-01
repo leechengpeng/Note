@@ -8,7 +8,7 @@
 
 ### 实例：订阅报纸
 ```C++
-// 观察者/订阅
+// 观察者/订阅者
 class Subscriber
 {
 public:
