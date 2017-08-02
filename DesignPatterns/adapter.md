@@ -1,1 +1,60 @@
 # 适配器模式
+> 将一个类A的接口变成客户端B（适配对象）所期待的另一种接口，从而使原本的接口不匹配而无法在一起工作的两个类能够在一起工作。
+
+## 实例
+**STL**中的**stack**就是使用适配器模式的典型例子，它以其他容器（vector或list）作为低层实现，将其他类的接口**适配**到自己所需的业务中。下面是一个简单版本的stack实现：
+```C++
+// 将Adaptee的接口适配到stack上
+template <typename T, typename Adaptee = std::vector<T>>
+class stack
+{
+public:
+	void push(const T vData)
+	{
+		m_Stack.push_back(vData);
+	}
+
+	void pop()
+	{
+		m_Stack.pop_back();
+	}
+
+	T top() const
+	{
+		return m_Stack.back();
+	}
+
+	bool empty() const
+	{
+		return m_Stack.empty();
+	}
+
+private:
+	Adaptee m_Stack;
+};
+```
+客户端代码：
+```C++
+int main()
+{
+	stack<int> Stack;
+	Stack.push(1);
+	Stack.push(3);
+	Stack.push(5);
+
+	while (!Stack.empty())
+	{
+		std::cout << Stack.top() << std::endl;
+		Stack.pop();
+	}
+
+	return 0;
+}
+```
+> VS2015：5 3 1
+
+只要是实现了`back`、`push_back`、`pop_back`和`empty`方法的容器都可以适配到`stack`上，如`vector`、`deque`或`list`。
+```
+stack<int, std::list<int>>  Stack;
+stack<int, std::deque<int>> Stack;
+```
