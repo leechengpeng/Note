@@ -1,10 +1,50 @@
 # 适配器模式
 > 将一个类A的接口变成客户端B（适配对象）所期待的另一种接口，从而使原本的接口不匹配而无法在一起工作的两个类能够在一起工作。
 
-适配器模式能够让两个没有太多联系的类工作在一起，提高了类的**复用性**和**灵活性**。
+适配器模式能够让两个没有太多联系的类工作在一起，提高了类的**复用性**和**灵活性**。适配器的实现模板如下：
+```C++
+class Target
+{
+public:
+	virtual void request() = 0;
+};
+
+class ConcreteTarget : public Target
+{
+public:
+	virtual void request() override { }
+};
+
+class Adaptee
+{
+public:
+	void doSomething() { }
+};
+
+class Adapter : public Target, public Adaptee
+{
+public:
+	virtual void request() override
+	{
+		doSomething();
+	}
+};
+
+int main()
+{
+	Target* pTarget = new ConcreteTarget();
+	pTarget->request();
+
+	return 0;
+}
+```
+如果某一天业务需求变了，需要适配器的逻辑，只需要在客户端修改如下代码即可：
+```C++
+Target* pTarget = new Adapter();
+```
 
 ## 实例
-**STL**中的**stack**就是使用适配器模式的典型例子，它以其他容器（vector或list）作为低层实现，将其他类的接口**适配**到自己所需的业务中。下面是一个简单版本的stack实现：
+**STL**中的**stack**就是一个典型的**适配器（Adapter）**，它以其他容器（vector或list）作为低层实现，将其他类的接口**适配**到自己所需的业务中。下面是一个简单版本的stack实现：
 ```C++
 // 将Adaptee的接口适配到stack上
 template <typename T, typename Adaptee = std::vector<T>>
