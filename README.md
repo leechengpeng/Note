@@ -12,6 +12,7 @@
 
 ## 2. Algorithm
  - [桶排序](Algorithm/bucket_sort.md)
+ - [基数排序](Algorithm/radix_sort.md)
  - [插入排序：直接插入 & Shell排序](Algorithm/insert_sort.md)
  - [交换排序：冒泡 & 快速排序](Algorithm/exchange_sort.md)
  - [排序算法的选择](Algorithm/sort_analysis.md)
