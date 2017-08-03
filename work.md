@@ -14,7 +14,7 @@
 - [x] **苏宁**
 - [x] **完美世界**
 
-- 牛客校招日历：[https://www.nowcoder.com/activity/campus2018](https://www.nowcoder.com/activity/campus2018)
+牛客校招日历：[https://www.nowcoder.com/activity/campus2018](https://www.nowcoder.com/activity/campus2018)
 
 ## 项目
 * 纹理合成
