@@ -1,24 +1,20 @@
-
-## 牛客校招日历：[https://www.nowcoder.com/activity/campus2018](https://www.nowcoder.com/activity/campus2018)
 ## 内推
+- [ ] **360**
+- [ ] **今日头条**
 - [x] **京东**
 - [x] **网易游戏（雷火）**：链接在微信
 - [x] **网易游戏（互娱）**
 - [x] **网易互联网**
 - [x] **阿里巴巴**
-- [ ] **华为**：7月30号截止
+- [x] **华为**：7月30号截止
 - [x] **百度（复合搜索部）**：[huanghaitao02@baidu.com](huanghaitao02@baidu.com)，“复合搜索部\_C/C++研发工程师\_姓名\_学校\_专业”
-- [ ] **Face++**：
 - [x] **搜狐（提前批）**：[xiaohuzhaopin@sohu-inc.com](xiaohuzhaopin@sohu-inc.com)，“姓名\_学校\_算法研发工程师”
-- [ ] **搜狐**：[westyuan@sohu-inc.com](westyuan@sohu-inc.com)，“C++工程师\_学校\_学历\_姓名”
 - [x] **拼多多**：[pddcampus@pinduoduo.com](pddcampus@pinduoduo.com)，“服务端研发工程师-学校-专业-姓名”
+- [x] **百度**
+- [x] **苏宁**
+- [x] **完美世界**
 
-- [ ] **百度**
-- [ ] **360**
-- [ ] **唯品会**
-- [ ] **苏宁**
-- [ ] **今日头条**
-- [ ] **完美世界**
+- 牛客校招日历：[https://www.nowcoder.com/activity/campus2018](https://www.nowcoder.com/activity/campus2018)
 
 ## 项目
 * 纹理合成
