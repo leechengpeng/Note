@@ -17,20 +17,21 @@
 ### 解法：
 这道题求解最大子数组和，典型的求解最优解的问题，可以通过**动态规划思想**分解该问题：
 ```C++
-int maxSubArray(vector<int>& nums) {
-    int max=nums[0];
-    int temp=nums[0];
+#include <vector>
+#include <algorithm>
 
-    for(int i=1;i<nums.size();i++)
-    {
-        temp=std::max(nums[i],temp+nums[i]);
-        max=max<temp?temp:max;
-    }
+int maxSubArray(const std::vector<int>& vNums) {
 
-    return max;
+	int Max  = vNums[0];
+	int Temp = vNums[0];
+	
+	for (size_t i = 1; i < vNums.size(); i++)
+	{
+		Temp = std::max(vNums[i], vNums[i] + Temp);
+		Max = std::max(Temp, Max);
+	}
+
+	return Max;
 }
 ```
-
-
-
 // 将一个大问题（N个元素的数组Array）转化为较小的问题（N-1个元素的数组）
