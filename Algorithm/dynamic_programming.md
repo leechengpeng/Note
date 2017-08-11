@@ -4,6 +4,8 @@
 * **重叠的子问题**：当**问题**由**相同的更小子问题构成**，称之为重叠的子问题。
 * **空间换时间算法**：重叠子问题之间一般有某种**递推关系**，通常将较小问题的最优解结果**记录在表中**来替换**交叠子问题的重复求解**。
 
+关于动态规划的详细概念引导，推荐阅读**刘永辉**的[国王金矿问题](http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html)。
+
 ## 实例
 ### 1. Maximum Subarray
 > Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
@@ -12,7 +14,6 @@
 
 **Link**：[https://leetcode.com/problems/maximum-subarray/description/](https://leetcode.com/problems/maximum-subarray/description/)
 
-
-
-#### 参考：
-* [国王金矿问题](http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html)
+### 解法：
+这道题求解最大子数组，典型的求解最优解的问题。通过**动态规划思想**分解该问题：
+1. 将求最大子数组问题数组的第一个元素`Array[0]`
