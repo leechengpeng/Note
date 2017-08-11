@@ -15,5 +15,5 @@
 **Link**：[https://leetcode.com/problems/maximum-subarray/description/](https://leetcode.com/problems/maximum-subarray/description/)
 
 ### 解法：
-这道题求解最大子数组，典型的求解最优解的问题，可以通过**动态规划思想**分解该问题。考虑数组的第一个元素**Array[0]**和最大子数组**Array[i~j]**的关系，其中**i <= j**：
+这道题求解最大子数组，典型的求解最优解的问题，可以通过**动态规划思想**分解该问题。考虑数组的第一个元素**Array\[0\]**和最大子数组**Array\[i\~j\]**的关系，其中**i\<\=j**：
 1. `Array[0]`
