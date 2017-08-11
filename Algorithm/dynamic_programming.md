@@ -4,12 +4,10 @@
 * **重叠的子问题**：
 
 
+## 参考：
+* [国王金矿问题](http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html)
+
 
 * **重叠的子问题**：问题通常由重叠的子问题构成，这样的子问题出现在对给定问题求解的递推关系中，这个递推关系包含了相同问题的更小子问题的解。将较小问题的最优解结果**记录在表中**来替换交叠子问题的重复求解（动态规划也是一种以空间换时间的算法）。
 
 
-链接地址：
-1. https://wenku.baidu.com/view/61adcc10866fb84ae45c8dda.html?from=search
-2. http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html
-3. http://www.cnblogs.com/bourbon/archive/2011/08/23/2151044.html
-4. http://www.cnblogs.com/jmzz/archive/2011/06/26/2090702.html
