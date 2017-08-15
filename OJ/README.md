@@ -6,5 +6,6 @@
  - [0078：Subsets](LC_0078.md)
  
 ### DP
+ - [0064：Minimum Path Sum](LC_0064.md)
  - [0097：Interleaving String](LC_0097.md)
  
