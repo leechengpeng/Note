@@ -21,7 +21,7 @@
  - [最小生成树](Algorithm/mst.md)
  - [最低公共祖先](Algorithm/common_pnode.md)
  - [海量数据处理](Algorithm/big_data.md)
- - 动态规划
+ - [动态规划](Algorithm/dynamic_programming.md)
  - [OJ](OJ/README.md)
 
 ## 3. 数据结构
