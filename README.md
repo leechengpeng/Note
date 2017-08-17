@@ -29,11 +29,8 @@
  - [B树](DataStructure/b_tree.md)
  - [跳表](DataStructure/skip_list.md)
 
-## 4. 图形学
- - [齐次坐标](homogeneous_coordinate.md)
- - 通过三个互相垂直的向量可以定义一个坐标空间，并将这三个向量构造成一个矩阵，通过该矩阵可以让任意坐标变换到这个坐标空间中。
-
 ## 4. 其它
+ - [图形学](CG/readme.md)
  - [设计模式](DesignPatterns/readme.md)
  - [操作系统](Common/OS.md)
  - [TCP & UDP](Common/network_tcp_udp.md)
