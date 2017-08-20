@@ -17,7 +17,7 @@
  - [交换排序：冒泡 & 快速排序](Algorithm/exchange_sort.md)
  - [排序算法的选择](Algorithm/sort_analysis.md)
  - [广度优先遍历 & 深度优先遍历](Algorithm/bfs_dfs.md)
- - [二叉树的中序遍历](inorder.md)
+ - [二叉树的中序遍历](Algorithm/inorder.md)
  - [Dijkstra单源最短路径算法](Algorithm/dijkstra.md)
  - [最小生成树](Algorithm/mst.md)
  - [最低公共祖先](Algorithm/common_pnode.md)
