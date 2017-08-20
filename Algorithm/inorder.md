@@ -9,16 +9,20 @@ std::vector<TreeNode*> inorderTraversal(TreeNode* vRoot)
 	std::stack<TreeNode*> Stack;
 	while (pNode || !Stack.empty())
 	{
+		// 将二叉树的左节点不断压入栈中
 		while (pNode)
 		{
 			Stack.push(pNode);
 			pNode = pNode->left;
 		}
 
+		// 弹出当前最左端子节点
 		pNode = Stack.top();
 		Stack.pop();
-
+		
+		// 保存遍历结果
 		Result.push_back(pNode);
+		// 如果右节点存在，访问其右节点
 		pNode = pNode->right;
 	}
 
