@@ -39,3 +39,6 @@
 float gamma = 2.2;
 fragColor.rgb = pow(fragColor.rgb, vec3(1.0/gamma)); // gamma的倒数
 ```
+
+## 6. Blinn-Phong和Phong光照模型
+**Blinn-Phong**光照模型是在**Phong**光照模型基础上添加添加了一个**半程向量**（halfway vector），当**半程向量**与**法向量**夹角越小，其镜面反射强度越高。**Blinn-Phong**光照模型主要解决**Phong**光照模型中，**视线与反射线夹角大于90而导致镜面反射强度为0的情况**。
