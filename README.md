@@ -47,3 +47,4 @@
 * [c++研发面试](http://blog.csdn.net/Watson2016/article/details/69944537?locationNum=14&fps=1)
 * [程序员如何快速准备面试中的算法](http://www.cnblogs.com/scy251147/p/3635010.html)
 * [腾讯、百度、网易游戏、华为Offer及笔经面经](http://blog.csdn.net/kenden23/article/details/17374371#comments)
+* [应届游戏开发求职路](http://www.cnblogs.com/RanDeng/p/5014407.html)
