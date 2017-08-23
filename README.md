@@ -1,14 +1,4 @@
-## 1. C++
-
- - [C++的三种new](CPP/New.md)
- - [使用对象管理资源](CPP/SmartPointer.md)
- - [内存池](CPP/MemoryPool.md)
- - [虚函数表](CPP/VirutalTable.md)
- - [对象模型](CPP/ObjectModel.md)
- - [类的大小](CPP/SizeofClass.md)
- - [虚继承](CPP/VirtualExtends.md)
- - [构造函数设计](CPP/Constructor.md)
- - [一些问题](CPP/Common.md)
+## 1. [C++](CPP/readme.md)
 
 ## 2. Algorithm
  - [桶排序](Algorithm/bucket_sort.md)
