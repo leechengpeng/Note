@@ -9,3 +9,5 @@
  - [虚继承](VirtualExtends.md)
  - [构造函数设计](Constructor.md)
  - [一些问题](Common.md)
+
+static inline and define: http://www.cnblogs.com/iloveyoucc/archive/2012/03/18/2404658.html
