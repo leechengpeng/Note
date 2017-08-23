@@ -1,4 +1,4 @@
-## 1. [C++](CPP/readme.md)
+## [C++](CPP/readme.md)
 
 ## 2. Algorithm
  - [桶排序](Algorithm/bucket_sort.md)
