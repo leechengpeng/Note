@@ -68,5 +68,5 @@ fragColor.rgb = pow(fragColor.rgb, vec3(1.0/gamma)); // gamma的倒数
 
 采用**方法二**的原因是：因为不是每一个Fragment的视线和光线都 因此可以将其放置到顶点着色器中进行，效率会得到很大的提升。而方法一中的每一个Fragment所对应的法向量都不相同，因此必须在Fragment Shader中进行。
 
-http://blog.csdn.net/poem_qianmo/article/details/75943714
-https://wenku.baidu.com/view/40047b4a6c175f0e7cd137e0.html
+## 参考
+1. http://my.csdn.net/zhmxy555
