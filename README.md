@@ -32,6 +32,7 @@
 ## 4. 其它
  - [面经](interview.md)
  - [图形学](CG/readme.md)
+ - 《Real-Time Rendering 3rd》
  - [设计模式](DesignPatterns/readme.md)
  - [操作系统](Common/OS.md)
  - [TCP & UDP](Common/network_tcp_udp.md)
