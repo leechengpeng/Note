@@ -3,22 +3,11 @@
 ## 1. 默认构造函数（Default Constructor）的构造操作
 ### 例1：未定义默认构造函数
 ```C++
-class Shy
-{
-public:
-	Shy() : m_Degree(1) {}
-
-private:
-	int m_Degree;
-};
-
 class Person
 {
-public:
-
 private:
-	Shy      m_Shy;
-	unsigned m_Age;
+	unsigned    m_Age;
+	std::string m_Name;
 };
 
 int main()
@@ -29,21 +18,21 @@ int main()
 }
 ```
 ```
-VS2015: Person::m_Shy::m_Degree = 1, Person::m_Age = 3435973836
+Tom::m_Age  = 3435973836;
+Tom::m_Name = "";
 ```
-
-类**Person**没有提供默认构造函数，在执行`Person Tom;`代码段时，编译器将合成一个默认构造函数，类似于：
+类**Person**没有显示定义构造函数，编译器会为其提供一个**合成默认构造函数**：
 ```C++
 // 编译器合成默认构造函数
 inline Person::Person()
 {
 	// 编译器附加上的Compiler Code
-	m_Shy.Shy::Shy();
+	m_Name.string::string();
 }
 ```
-从编译器的行为可以得到如下结论：
-* 如果类未显示地（explicit）定义默认构造函数（如类`Person`），编译器将生成一个合成默认构造函数
-* 合成默认构造函数只会附加初始化用户定义类型：`Shy`，不会附加初始化内置类型：`int`（定义类的默认构造函数时，最好显示初始化内置类型）
+**结论**：
+* 如果类未**显示地**定义默认构造函数，编译器将生成一个合成默认构造函数
+* 合成默认构造函数会初始化带有默认构造函数的成员变量，不会初始化内置类型
 
 ### 例2：定义默认构造函数
 ```C++
