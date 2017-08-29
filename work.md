@@ -1,12 +1,8 @@
 
-## 秋招笔试
-| 公司 | 笔试时间 | 后续 |
-| --- | --- | --- |
-| [美团](http://campus.meituan.com) | 2017.08.31 19:00 - 21:20 | 暂无 |
-| [腾讯](http://join.qq.com/index.php) | 9.12 | 暂无 |
-| [完美世界](http://campus.wanmei.com/) | 暂无 | 暂无 |
-
-
+## 秋招
+- [ ] [美团](http://campus.meituan.com)：2017.08.31 19:00 - 21:20
+- [ ] [腾讯](http://join.qq.com/index.php)：9.12
+- [ ] [完美世界](http://campus.wanmei.com/)：
 - [ ] **盛大**： 9.10 ？
 - [ ] **百度**： 9.11 - 9.27 ?
 - [ ] **京东**： 8.15 - 10.10 ?
