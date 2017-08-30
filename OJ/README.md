@@ -11,3 +11,6 @@
  - [0097：Interleaving String](LC_0097.md)
 
 ## 2. 剑指Offer
+ - [0010：统计整数二进制位中1的个数](O_0010.md)
+
+
