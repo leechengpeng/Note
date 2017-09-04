@@ -6,7 +6,8 @@
 - [ ] [网易游戏](http://game.campus.163.com/xiaoyuan/zhiwei/zaixian/jsl/2017/08/07/26593_699165.html#jobList)：**9.16**
 - [ ] [京东](http://campus.jd.com/)：?
 - [ ] **Intel**： ?
-* gameloft
-
+- [ ] **NVIDIA**： ?
+- [ ] **Microsoft**： ?
+- [ ] **gameloft**： ?
 
 牛客校招日历：[https://www.nowcoder.com/activity/campus2018](https://www.nowcoder.com/activity/campus2018)
