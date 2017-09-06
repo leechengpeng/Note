@@ -1,4 +1,4 @@
-## 判断素数/质数
+## 1. 判断素数/质数
 ```C++
 bool prime(unsigned vNum)
 {
