@@ -11,3 +11,4 @@ bool prime(unsigned vNum)
 	return true;
 }
 ```
+参考：http://www.cnblogs.com/xiehongfeng100/p/4332998.html
