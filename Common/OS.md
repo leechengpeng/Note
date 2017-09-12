@@ -13,9 +13,9 @@
 4. **创建态**：进程正在被创建，尚未转到就绪态。
 5. **结束态**：进程正常或中断接收。
 
+![进程状态切换](https://github.com/leechengpeng/Note/blob/master/Resources/Images/process_status.png)
 
-
-
+> 注意**阻塞态**是不能直接切换到运**行态的**，阻塞态必须等待所需资源就绪（就绪态）才能被执行。
 
 
 ## 1. 进程和线程
