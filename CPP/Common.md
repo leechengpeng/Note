@@ -21,11 +21,11 @@
 
 
 ## STL迭代器类型
-* input迭代器：从容器读取元素，迭代器每次只能向前移动一位，也就是说一个迭代器只能遍历一遍迭代器
-* output迭代器：像容器写入元素，同input迭代器
-* forward迭代器：组合input和output迭代器
-* bidirectional迭代器：可以双向访问
-* random acess迭代器：可以任意跳跃
+* **input迭代器**：从容器读取元素，迭代器每次只能向前移动一位，也就是说一个迭代器只能遍历一遍迭代器
+* **output迭代器**：像容器写入元素，同input迭代器
+* **forward迭代器**：组合input和output迭代器
+* **bidirectional迭代器**：可以双向访问
+* **random acess迭代器**：可以任意跳跃
 
 ### 1. 字节顺序
 字节存储机制主要有两种：
