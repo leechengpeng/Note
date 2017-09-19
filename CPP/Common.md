@@ -15,7 +15,7 @@
 同上
 
 ## dynamic_cast
-* **dynamic_cast**转换的时候涉及运行时类型检查
+* **dynamic_cast**转换的时候涉及运行时类型检查，也就是RTTI
 * **dynamic_cast**转换的类型必须有虚函数才能进行转换，没有虚函数就没有虚函数表，会产生编译错误
 * **dynamic_cast**向上转型类似于**static_cast**，向下转型可能转型失败，返回为空
 
