@@ -27,6 +27,7 @@ PyLuaTblParser.py 中包含一个class，类名为PyLuaTblParser，类中包含�
 2. PyLuaTblParser类包含update(self, d)用字典d更新类中的数据，类似于字典的update
 
 基本测试方法：
+```
 a1 = PyLuaTblParser()
 a2 = PyLuaTblParser()
 a3 = PyLuaTblParser()
@@ -40,8 +41,10 @@ a2.dumpLuaTable(file_path)
 a3.loadLuaTable(file_path)
 
 d3 = a3.dumpDict()
+```
 
 附：test_str对应的Python dict：
+```
 {
      "array": [65, 23, 5],
      "dict": {
@@ -56,3 +59,4 @@ d3 = a3.dumpDict()
           "string": "value"
      }
 }
+```
