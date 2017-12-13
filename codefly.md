@@ -63,7 +63,7 @@ d3 = a3.dumpDict()
 }
 ```
 ### 测试数据1
-```
+```python
 Lua_table_str = '{name = "lcp", age = 13, location = "sichuan"}'
 Lua_table_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
 ```
