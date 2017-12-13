@@ -1,6 +1,6 @@
 ## python: lua table parser
 
-基于Python 2.7.X 封装实现一个**可重用的类**，具体要求如下：
+基于Python 2.7.X 封装实现一个**可重用的类PyLuaTblParser**，具体要求如下：
 1. 该类能读取Lua 5.2.X table的构造式定义的数据，并以Python字典的方式读写数据
 2. 给定一个Python字典，可以更新类中的数据，并以Lua table构造式输出
 3. 遵循Lua table构造式定义确保相同的同构数据源彼此转换后数据仍然一致
