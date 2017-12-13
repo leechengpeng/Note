@@ -66,3 +66,7 @@ d3 = a3.dumpDict()
      }
 }
 ```
+### 测试数据1
+```
+Lua_table_str = '{name = "lcp", age = 13, location = "sichuan"}'
+```
