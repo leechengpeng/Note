@@ -28,10 +28,6 @@ PyLuaTblParser.py 中包含一个class，类名为PyLuaTblParser，类中包含�
 1. PyLuaTblParser类支持用[]进行赋值、读写数据的操作，类似字典
 2. PyLuaTblParser类包含update(self, d)用字典d更新类中的数据，类似于字典的update
 
-```
-{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}
-```
-
 基本测试方法：
 ```
 a1 = PyLuaTblParser()
@@ -69,4 +65,6 @@ d3 = a3.dumpDict()
 ### 测试数据1
 ```
 Lua_table_str = '{name = "lcp", age = 13, location = "sichuan"}'
+Lua_table_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
 ```
+
