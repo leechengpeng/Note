@@ -3,5 +3,6 @@
 ## 1. 地形表示形式
 真实世界的地形数据通常来至摇杆或卫星获取（remotesensing aircraft and satellites），人工地形数据来至美工或则代码直接生成。根据不同的使用场景，地形的表示形式也有所不同：
 * **Height Maps**：Height maps是使用最为广泛的地形数据表示形式。一张Height map也被称作高度场（height field），可以使用灰度图表示高度场，图中的每一个像素点都表示一个位置的高度。将高度图放置到一个水平面上，并使用高度图中的像素替换掉其水平面对应位置的高度。这些被替换的的像素称之为posts。Height maps被广泛使用的原因是其表示形式简单，数据来源丰富。
-
-
+* **Voxels**
+* **Implicit Surfaces**
+* **Triangulated Irregular Networks(TIN)**：TIN网格是最基本的三角形网格
