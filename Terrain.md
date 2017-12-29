@@ -5,4 +5,6 @@
 * **Height Maps**：Height maps是使用最为广泛的地形数据表示形式。一张Height map也被称作高度场（height field），可以使用灰度图表示高度场，图中的每一个像素点都表示一个位置的高度。将高度图放置到一个水平面上，并使用高度图中的像素替换掉其水平面对应位置的高度。这些被替换的的像素称之为posts。Height maps被广泛使用的原因是其表示形式简单，数据来源丰富。
 * **Voxels**
 * **Implicit Surfaces**
-* **Triangulated Irregular Networks(TIN)**：TIN网格是最基本的三角形网格
+* **Triangulated Irregular Networks(TIN)**：TIN网格由一系列点云构成的没有缝隙的三角形网格。用于构建TINs网格的点云通常由飞行器通过LiDAR（Light detection and ranging）捕获。LiDAR是一种基本的摇杆技术，通过飞行器定时发射激光扫描地形表面捕获地形数据。
+
+
