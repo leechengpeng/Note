@@ -23,3 +23,6 @@ DLOD是最简单的LOD算法，其实现就是为模型创建不同细节程度�
 
 #### CLOD(Continuous Level of Detail)
 在CLOD算法中，场景的远景会选择不同细节层次的数据进行渲染。
+
+### 2.2 Screen-Space Error
+不管我们使用什么类型的LOD算法，我们必须给场景中某渲染物体选择一个具体的LOD层次。
