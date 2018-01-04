@@ -38,3 +38,5 @@ DLOD是最简单的LOD算法，其实现就是为模型创建不同细节程度�
 
 ## 3. Geometry clipmap
 Geometry clipmap是一种地形LOD技术，其在GPU上缓存了一系列嵌套的、规则的地形几何网格。每一层网格都以视点为中心，并随着视点的移动而逐渐更新网格数据。这些网格共同构成了一个同心方形结构。
+
+在渲染的时候，Geometry clipmap算法将高程数据转化为height map。在渲染之前，height map会被预先的过滤到一个mipmap金字塔中。每一个同心方形结构都被称为一个climap层，对应mipmap金字塔的某一层。每一层clipmap都对应一张存放在GPU中的纹理，纹理中存放了mipmap金字塔某层数据中靠近视点的子集。
